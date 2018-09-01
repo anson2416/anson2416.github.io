@@ -3,18 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2018 | title</title>
+  <title>解决Hexo NexT主题访问慢 | title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="xxx">
-<meta property="og:type" content="website">
-<meta property="og:title" content="title">
-<meta property="og:url" content="anson2416.github.io/archives/2018/index.html">
+  <meta name="description" content="最近一段时间博客打开速度很慢（博客使用Hexo搭建在Github Page上），浏览器检查网络信息后发现是因为fonts.googleapis.com加载极慢。Google了一下，发现了解决方案。 把在NexT主题的_config.yml里面的： 12# Uri of fonts host. E.g. //fonts.googleapis.com (Default)host: 改为： 123# U">
+<meta name="keywords" content="software,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决Hexo NexT主题访问慢">
+<meta property="og:url" content="anson2416.github.io/2017/10/15/解决Hexo-Next主题访问慢/index.html">
 <meta property="og:site_name" content="title">
-<meta property="og:description" content="xxx">
+<meta property="og:description" content="最近一段时间博客打开速度很慢（博客使用Hexo搭建在Github Page上），浏览器检查网络信息后发现是因为fonts.googleapis.com加载极慢。Google了一下，发现了解决方案。 把在NexT主题的_config.yml里面的： 12# Uri of fonts host. E.g. //fonts.googleapis.com (Default)host: 改为： 123# U">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2017-10-15T10:34:29.548Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="title">
-<meta name="twitter:description" content="xxx">
+<meta name="twitter:title" content="解决Hexo NexT主题访问慢">
+<meta name="twitter:description" content="最近一段时间博客打开速度很慢（博客使用Hexo搭建在Github Page上），浏览器检查网络信息后发现是因为fonts.googleapis.com加载极慢。Google了一下，发现了解决方案。 把在NexT主题的_config.yml里面的： 12# Uri of fonts host. E.g. //fonts.googleapis.com (Default)host: 改为： 123# U">
   
     <link rel="alternate" href="/atom.xml" title="title" type="application/atom+xml">
   
@@ -67,147 +69,72 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/09/02/HEXO下的Markdown语法-GFM-写博客/" class="archive-article-date">
-  <time datetime="2018-09-01T17:32:29.699Z" itemprop="datePublished">Sep 2</time>
+        <section id="main"><article id="post-解决Hexo-Next主题访问慢" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/10/15/解决Hexo-Next主题访问慢/" class="article-date">
+  <time datetime="2017-10-15T09:21:59.000Z" itemprop="datePublished">2017-10-15</time>
 </a>
-      
-    </header>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming</a>
   </div>
-</article>
-  
+
+  </div>
+  <div class="article-inner">
     
     
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/09/02/hello-world/" class="archive-article-date">
-  <time datetime="2018-09-01T17:20:14.580Z" itemprop="datePublished">Sep 2</time>
-</a>
-      
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/02/hello-world/">Hello World</a>
+    <h1 class="article-title" itemprop="name">
+      解决Hexo NexT主题访问慢
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/09/01/懒/" class="archive-article-date">
-  <time datetime="2018-09-01T15:39:44.000Z" itemprop="datePublished">Sep 1</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/09/01/懒/">懒3</a>
-    </h1>
-  
+        <p>最近一段时间<em>博客打开速度很慢</em>（博客使用Hexo搭建在Github Page上），浏览器检查网络信息后发现是因为<code>fonts.googleapis.com</code>加载极慢。Google了一下，发现了解决方案。</p>
+<p>把在NexT主题的<code>_config.yml</code>里面的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span><br><span class="line">host:</span><br></pre></td></tr></table></figure>
+<p>改为：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span><br><span class="line"># fonts.lug.ustc.edu.cn是中科大的源</span><br><span class="line">host: //fonts.lug.ustc.edu.cn</span><br></pre></td></tr></table></figure>
+<p>:100:</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/25/我的同事娜姐/" class="archive-article-date">
-  <time datetime="2018-03-25T13:50:21.000Z" itemprop="datePublished">Mar 25</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/25/我的同事娜姐/">我的同事娜姐</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/" class="archive-article-date">
-  <time datetime="2018-03-04T03:10:48.000Z" itemprop="datePublished">Mar 4</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2017/10/15/解决Hexo-Next主题访问慢/" data-id="cjljpgr1d002f2oundhmc0ugu" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/">Spacevim/Neovim使用记录（3）：常用操作</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/04/SpaceVimNeovim使用记录（2）Windows版配置 /" class="archive-article-date">
-  <time datetime="2018-03-04T03:08:03.000Z" itemprop="datePublished">Mar 4</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/04/SpaceVimNeovim使用记录（2）Windows版配置 /">SpaceVim/Neovim使用记录（2）：Windows版配置</a>
-    </h1>
-  
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
 
-    </header>
+    </footer>
   </div>
-</article>
   
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2018/03/04/SpaceVimNeovim使用记录（1）Windows版安装/" class="archive-article-date">
-  <time datetime="2018-03-04T02:44:49.000Z" itemprop="datePublished">Mar 4</time>
-</a>
-      
+<nav id="article-nav">
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/04/SpaceVimNeovim使用记录（1）Windows版安装/">Spacevim/Neovim使用记录（1）：Windows版安装</a>
-    </h1>
+    <a href="/2017/10/15/Hexo添加文章时自动打开编辑器/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hexo添加文章时自动打开编辑器
+        
+      </div>
+    </a>
   
+  
+    <a href="/2017/10/15/Chrome-错误代码-ERR-UNSAFE-PORT/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"> Chrome 错误代码 ERR_UNSAFE_PORT</div>
+    </a>
+  
+</nav>
 
-    </header>
-  </div>
+  
 </article>
-  
-  
-    </div></section>
-  
 
 </section>
         

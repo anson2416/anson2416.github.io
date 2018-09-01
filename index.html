@@ -3,8 +3,6 @@
 <head>
   <meta charset="utf-8">
   
-
-  
   <title>title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="xxx">
@@ -24,9 +22,11 @@
     <link rel="icon" href="/favicon.png">
   
   
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+    <!--<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">-->
   
   <link rel="stylesheet" href="/css/style.css">
+  
+
 </head>
 
 <body>
@@ -69,12 +69,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HEXO下的Markdown语法-GFM-写博客" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/02/HEXO下的Markdown语法-GFM-写博客/" class="article-date">
+  <time datetime="2018-09-01T17:32:29.699Z" itemprop="datePublished">2018-09-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2018/09/02/HEXO下的Markdown语法-GFM-写博客/" data-id="cjljpgqzm000a2ountklhmwsc" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/09/02/hello-world/" class="article-date">
   <time datetime="2018-09-01T17:20:14.580Z" itemprop="datePublished">2018-09-02</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming;</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -91,20 +121,618 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop.png" alt=""></p>
+<blockquote>
+<p><strong>本版本仅适用于Win环境</strong><br>本文关键字： <strong>Hexo绿色版</strong>，<strong>Hexo便携版</strong>，<strong>Hexo配置</strong>，<strong>Hexo</strong>，<strong>U盘</strong></p>
+</blockquote>
+<p><a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>是一个快速、简洁且高效的博客框架，支持 GitHub Flavored Markdown 的所有功能；具有超快生成速度，让上百个页面在几秒内瞬间完成渲染；还拥有各式各样的插件等等。</p>
+<p>但是就像很多教程里面写的那样，搭建 Hexo 本地环境，需要安装 Node.js、Git 以及使用 npm 进行安装和配置。这对于毫无经验的新手来说，是一个很大的挑战。同时，由于这些环境的存在，导致如果需要更换计算机的时候，重新安装配置一个新的Hexo环境，又得花费一些功夫。</p>
+<p>所以呢，锵锵，我们整合了一个 Hexo 便携版，来简化本地环境的部署。</p>
+<p>####<strong>版本介绍</strong><br>那么所谓的便携版到底是什么？便携版就是将 Hexo 本地环境所需要的各种依赖环境的整合到一起，做成的不需要安装的版本。</p>
+<p>本便携版（Release 1.0.0）所包含的软件如下：</p>
+<blockquote>
+<ul>
+<li>Git: 2.7.4</li>
+<li>Nodejs: 6.10.1</li>
+<li>Npm: 4.4.1</li>
+<li>Hexo: 3.2.2</li>
+</ul>
+</blockquote>
+<p>为了便携的需要，不能配置固定的环境变量，所以除此之外还有相应的批处理文件，下文将详细介绍。</p>
+<p>####<strong>从零开始，1分钟搭建Hexo写作环境</strong><br>说了这么多，我们这就开始教你如何在1分钟内，从零开始搭建Hexo写作环境！</p>
+<p>#####1 注册一个Github帐号</p>
+<p>1.1 进入<a href="https://github.com" target="_blank" rel="noopener">Github</a>，并在右边的3个框框中分别填写 用户名、邮箱地址、账户密码，并点击 <strong><code>Sign up for Github</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop2.png" alt="图1.1.1"></p>
+<p>1.2 进入欢迎页面后，点击<strong><code>Finish sign up</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop3.png" alt="图1.2.1"></p>
+<p>1.3 进入到这一步之后（<strong>图1.3.1</strong>），先别记着点任何东西，查看你的邮箱，应该会收到如下的邮件（<strong>图1.3.2</strong>），确认你的邮件。否则，你会看到错误页面（<strong>图1.3.3</strong>）。query完毕之后在<strong>图1.3.1</strong>所示的页面，点击<strong><code>+ New repository</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop5.png" alt="图1.3.1"></p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop6.png" alt="图1.3.2"></p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop7.png" alt="图1.3.3"></p>
+<p>1.4 请在红框中的 <strong><code>Repository name</code></strong> 里面输入 <strong><code>用户名.github.io</code></strong> ( <strong>用户名</strong> 就是你刚刚 <strong>步骤1.1</strong> 中注册的用户名)，然后点击 <strong><code>Create repository</code></strong>;</p>
+<p><img src="https://portablehexo.bitmoe.cn/hexopp/hexop8.png" alt="图1.4.1"></p>
+<p>1.5 至此，Github网页注册的部分完毕</p>
+<p>####2 下载HEXO Portable</p>
+<p>2.1 访问我们的 <a href="https://project.bitmoe.cn/PortableHexo/" target="_blank" rel="noopener">HEXO Portable</a> 页面，或者 <a href="https://github.com/Bitmoe/PortableHexo" target="_blank" rel="noopener">Github仓库</a> 下载最新的便携版；</p>
+<p>2.2 双击得到的自解压文件，解压到你需要安装博客的地方，可以选择硬盘或者U盘；</p>
+<p>####3 配置你的环境</p>
+<p>3.1 在你的博客的文件夹，你会发现很多批处理文件，我先介绍下各个文件的用途：</p>
+<blockquote>
+<ul>
+<li>配置基本信息 &gt;&gt; 配置博客的基本环境</li>
+<li>配置Github部署 &gt;&gt; 配置博客的部署</li>
+<li>启动命令行 &gt;&gt; 启动带环境变量的Git-Bash，否则无法使用node、npm、git等命令</li>
+<li>新建文章 &gt;&gt; 新建一篇文章</li>
+<li>渲染并本地测试 &gt;&gt; 生成并本地预览</li>
+<li>渲染并部署 &gt;&gt; 生成并部署到GitHub</li>
+<li>重置配置文件 &gt;&gt; 重置_config.yml</li>
+</ul>
+</blockquote>
+<p>3.2 我们继续进行环境配置，双击<strong><code>配置基本信息</code></strong>并按顺序输入以下信息：</p>
+<blockquote>
+<ul>
+<li>主标题：顾名思义</li>
+<li>副标题：顾名思义</li>
+<li>描述：顾名思义</li>
+<li>作者：顾名思义</li>
+<li>网站地址：填写 <strong>用户名.github.io</strong> （此处的用户名为<strong>步骤1.1</strong>中填写的用户名）<br><strong>如果您已经购买了域名，可以参看相关的文章！</strong></li>
+</ul>
+</blockquote>
+<p>3.3 双击<strong><code>配置Github部署</code></strong>并按顺序输入以下信息：</p>
+<blockquote>
+<ul>
+<li>Github的用户名：此处的用户名为<strong>步骤1.1</strong>中填写的用户名</li>
+<li>Github注册邮箱：此处的注册邮箱为<strong>步骤1.1</strong>中填写的注册邮箱</li>
+</ul>
+</blockquote>
+<p>3.4 输入完毕之后，会进行测试部署，等待屏幕提示<strong>下面将进行部署测试，稍后将有一个openssh的对话框出现，请输入你的github用户密码。</strong>的时候，按回车继续；（此处的用户密码为<strong>步骤1.1</strong>中填写的用户密码）</p>
+<p>3.5 然后继续等待，此时屏幕会出现n多行，耐心等待即可；</p>
+<p>3.6 等待屏幕提示<strong>请访问 https://用户名.github.io 查看是否部署成功！</strong>的时候，在浏览器中输入<strong>https://用户名.github.io </strong>，理论上可以看到你的Hexo站点！（此处的用户名为<strong>步骤1.1</strong>中填写的用户名）</p>
+<p>3.7 至此，你的Hexo环境就配置完成了，这样你的这个Hexo博客文件夹无论移动到哪一台电脑，都能通过<strong>启动命令行</strong>出现的bash命令行，或者其余便捷的批处理文件比如<strong>新建文章</strong>、<strong>渲染并本地测试</strong>、<strong>渲染并部署</strong>进行相应的操作。</p>
+<p>3.8 如果你在配置中出错，可以运行<strong>重置配置文件</strong>后，再重复<strong>3.1~3.6步骤</strong></p>
+<p>####4 开始享受纯粹的Hexo写作吧！</p>
+<p>####5 备注</p>
+<blockquote>
+<ul>
+<li>本便携版以及本文均使用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a>协议；</li>
+<li>本文所有权归 <a href="http://qistchan.com" target="_blank" rel="noopener">QistChan</a> &amp; <a href="https://wwww.bitmoe.com" target="_blank" rel="noopener">Bitmoe Inc.</a> 所有；</li>
+<li>本便携版由 <a href="https://www.bitmoe.com" target="_blank" rel="noopener">Bitmoe Inc.</a> 维护并提供技术支持；</li>
+<li>需要技术支持可以在<a href="https://github.com/Bitmoe/PortableHexo" target="_blank" rel="noopener">Github仓库</a> 提交<strong><code>Issues</code></strong>；</li>
+<li>Written with <a href="https://stackedit.io/" target="_blank" rel="noopener">StackEdit</a>.</li>
+</ul>
+</blockquote>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="anson2416.github.io/2018/09/02/hello-world/" data-id="cjljpe6y40000x4untld0ogcs" class="article-share-link">Share</a>
+      <a data-url="anson2416.github.io/2018/09/02/hello-world/" data-id="cjljpgr0o001c2oun2vpvv1lg" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/test/">test;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-懒" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/09/01/懒/" class="article-date">
+  <time datetime="2018-09-01T15:39:44.000Z" itemprop="datePublished">2018-09-01</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/life/">life;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/09/01/懒/">懒3</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>很多天(18/03-18/09)没有写/学习/复制东西了。博客很多文章都是来自网上的。自己看完后就保存下，作为一个参考。因为博客的原文章（未渲染前）是使用<em>Markdown</em>语法写的，这样还可以熟悉下MD的语法。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2018/09/01/懒/" data-id="cjljpgr1400202oun8k2wuaeo" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/">life;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-我的同事娜姐" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/25/我的同事娜姐/" class="article-date">
+  <time datetime="2018-03-25T13:50:21.000Z" itemprop="datePublished">2018-03-25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/life/">life;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/25/我的同事娜姐/">我的同事娜姐</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>今天公司年会，在去的途中遇到同事<em>娜姐</em>。于是她提出一起找地方坐。后来她就耍了个小手段自己找人一起了，剩下帮她霸位的我一脸懵逼。再一次证明了这个同事的风评不好。</p>
+<p>而且她还假装找不到我：特意问我第一排的同事有无见到我。其实我就在后面的3排，刚刚她下去的时候无理由不记得的。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2018/03/25/我的同事娜姐/" data-id="cjljpgr1600232ouneepbsula" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/life/">life;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-SpaceVimNeovim使用记录（3）常用操作" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/" class="article-date">
+  <time datetime="2018-03-04T03:10:48.000Z" itemprop="datePublished">2018-03-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/">Spacevim/Neovim使用记录（3）：常用操作</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://endenv.com/blog/post/nnsnow/SpaceVim-Neovim%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%EF%BC%882%EF%BC%89%EF%BC%9A-%E5%B8%B8%E7%94%A8%E6%93%8D%E4%BD%9C" target="_blank" rel="noopener">原文链接</a></p>
+<h2 id="代码浏览"><a href="#代码浏览" class="headerlink" title="代码浏览"></a>代码浏览</h2><ul>
+<li><code>F2</code>：打开语法树，<code>F3</code>：打开文件树</li>
+<li><code>SPC &#39;</code>：打开 <strong>shell</strong></li>
+<li><code>SPC m g c</code>：创建 <strong>gtags database</strong></li>
+<li><code>SPC m g d</code>：查找定义</li>
+<li><code>SPC m g r</code>：查找用</li>
+<li><code>SPC m g u</code>：更新 <strong>gtags database</strong></li>
+<li><code>Ctrl ]</code>：查找定义（有 <strong>tags</strong> 文件时）</li>
+<li><code>Ctrl o</code>：返回上一次位置</li>
+<li><code>SPC e l</code>：打开代码检查错误窗口</li>
+<li><code>SPC e L</code>：打开代码检查错误窗口并聚焦</li>
+<li><p><code>SpaceVim</code> 的 root 目录不在当前文件目录时（如git,svn项目），此时按 <strong>F2</strong> 打开语法树会没有内容，因为 <strong>F2</strong> 只会在一层目录生成 tags 文件，此时需要到命令行在你需要的位置执行 <code>ctags * -R</code>。</p>
+<h2 id="窗口光标"><a href="#窗口光标" class="headerlink" title="窗口光标"></a>窗口光标</h2></li>
+<li><p>各个窗口可以用鼠标进行操作</p>
+</li>
+<li><code>SPC j l</code> 跳转到特定的行</li>
+<li><code>SPC j j</code> 跳转到特定的字符</li>
+</ul>
+<h2 id="文件操作"><a href="#文件操作" class="headerlink" title="文件操作"></a>文件操作</h2><p>一下操作都在 vimfiler 窗口进行 （F3 打开）</p>
+<ul>
+<li><code>N</code>：新建文件</li>
+<li><code>.</code>：切换显示隐藏文件</li>
+<li><code>yY</code>：复制文件</li>
+<li><code>yy</code>：复制文件路径</li>
+<li><code>P</code>：粘贴文件</li>
+<li><code>i</code>：显示文件夹历史</li>
+<li><code>sg</code>：垂直分屏打开文件</li>
+<li><code>Ctrl+r</code>：刷新文件树</li>
+</ul>
+<h2 id="其他操作"><a href="#其他操作" class="headerlink" title="其他操作"></a>其他操作</h2><ul>
+<li><code>\y</code> 复制, <code>\p</code> 粘贴 （比 <code>&quot;+y</code>, <code>&quot;+p</code> 方便）</li>
+</ul>
+<h2 id="小应用"><a href="#小应用" class="headerlink" title="小应用"></a>小应用</h2><ul>
+<li><code>SPC a c</code> 打开日历</li>
+<li><code>SPC x g t</code> 翻译当前的单词</li>
+</ul>
+<h2 id="项目技巧"><a href="#项目技巧" class="headerlink" title="项目技巧"></a>项目技巧</h2><ul>
+<li>C/C++项目</li>
+<li>在你项目的根目录新建一个 <code>.clang</code> 文件，在文件里加上 clang 的参数，如<code>-I.. -std=c++11</code> 等。这样你打开项目里的任何文件，根目录都是 <code>.clang</code> 文件所在的目录，而且语法检查也依赖这个文件。</li>
+<li>类C代码增强高亮在 gbk 文件中可能会出现问题，这时使用 <code>:ChromaticaStop</code> 停掉增强高亮即可。</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/" data-id="cjljpgr0c000u2ounwregleok" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-SpaceVimNeovim使用记录（2）Windows版配置 " class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/04/SpaceVimNeovim使用记录（2）Windows版配置 /" class="article-date">
+  <time datetime="2018-03-04T03:08:03.000Z" itemprop="datePublished">2018-03-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/04/SpaceVimNeovim使用记录（2）Windows版配置 /">SpaceVim/Neovim使用记录（2）：Windows版配置</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://endenv.com/blog/post/nnsnow/SpaceVim-Neovim%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95%EF%BC%882%EF%BC%89%EF%BC%9A-Windows%E7%89%88%E9%85%8D%E7%BD%AE" target="_blank" rel="noopener">原文链接</a></p>
+<h2 id="配置优化"><a href="#配置优化" class="headerlink" title="配置优化"></a>配置优化</h2><p>这里直接给出我的 <strong>SpaceVim</strong> 用户配置文件内容。</p>
+<p>编辑 <code>C:\Users\&lt;Your Name&gt;\.SpaceVim.d\init.vim</code> 文件：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">&quot; ================================== SapceVim 依赖配置 =========================================</span><br><span class="line">&quot; 指定python2和python3的路径</span><br><span class="line">let g:python_host_skip_check=1</span><br><span class="line">let g:python_host_prog = &apos;D:\Program Files\Python2.7\python.exe&apos;</span><br><span class="line">let g:python3_host_skip_check=1</span><br><span class="line">let g:python3_host_prog = &apos;D:\Python3.6\python.exe&apos;</span><br><span class="line">&quot; 类C代码增强高亮插件的的clang库路径</span><br><span class="line">let g:chromatica#libclang_path=&apos;D:\Program Files\LLVM\bin&apos;</span><br><span class="line">&quot; ================================== SapceVim 基本配置 =========================================</span><br><span class="line">&quot; 启用/禁用终端使用真色彩</span><br><span class="line">let g:spacevim_enable_guicolors = 1</span><br><span class="line">&quot; 状态栏分割符的风格，取值：&apos;arrow&apos;, &apos;curve&apos;, &apos;slant&apos;, &apos;nil&apos;, &apos;fire&apos;</span><br><span class="line">let g:spacevim_statusline_separator = &apos;slant&apos;</span><br><span class="line">let g:spacevim_statusline_inactive_separator = &apos;bar&apos;</span><br><span class="line">&quot; buffer索引图标的风格，取值：0, 1, 2, 3, 4, 5</span><br><span class="line">let g:spacevim_buffer_index_type = 4</span><br><span class="line">let g:spacevim_enable_tabline_filetype_icon = 0</span><br><span class="line">let g:spacevim_enable_os_fileformat_icon = 0</span><br><span class="line">&quot; 是否显示模式提示字符</span><br><span class="line">let g:spacevim_enable_statusline_display_mode = 0</span><br><span class="line">&quot; 设置tab宽度</span><br><span class="line">let g:spacevim_default_indent = 4</span><br><span class="line">&quot; 是否启用deoplete用于补全, Ctrl + p 显示补全结果</span><br><span class="line">let g:deoplete#enable_at_startup = 1</span><br><span class="line">&quot; 设置字体和大小</span><br><span class="line">let g:spacevim_guifont = &apos;DejaVu\ Sans\ Mono\ for\ Powerline:h11&apos;</span><br><span class="line">if executable(&apos;vimlint&apos;)</span><br><span class="line">    call add(g:neomake_vim_enabled_makers, &apos;vimlint&apos;)</span><br><span class="line">endif</span><br><span class="line">if executable(&apos;vint&apos;)</span><br><span class="line">    call add(g:neomake_vim_enabled_makers, &apos;vint&apos;)</span><br><span class="line">endif</span><br><span class="line">if has(&apos;python3&apos;)</span><br><span class="line">    let g:ctrlp_map = &apos;&apos;</span><br><span class="line">    nnoremap &lt;silent&gt; &lt;C-p&gt; :Denite file_rec&lt;CR&gt;</span><br><span class="line">endif</span><br><span class="line">let g:clang2_placeholder_next = &apos;&apos;</span><br><span class="line">let g:clang2_placeholder_prev = &apos;&apos;</span><br><span class="line">&quot; ================================== SapceVim layer配置 =========================================</span><br><span class="line">call SpaceVim#layers#load(&apos;shell&apos;,</span><br><span class="line">        \ &#123;</span><br><span class="line">        \ &apos;default_shell&apos; : &apos;VimShell&apos;,</span><br><span class="line">        \ &#125;</span><br><span class="line">        \ )</span><br><span class="line">call SpaceVim#layers#load(&apos;default&apos;)</span><br><span class="line">&quot; 代码语法检查需要安装相应的编译器，比如C/C++需要安装clang</span><br><span class="line">&quot; call SpaceVim#layers#load(&apos;checkers&apos;)</span><br><span class="line">call SpaceVim#layers#disable(&apos;checkers&apos;)</span><br><span class="line">call SpaceVim#layers#load(&apos;tags&apos;)</span><br><span class="line">call SpaceVim#layers#load(&apos;lang#c&apos;)</span><br><span class="line">call SpaceVim#layers#load(&apos;autocomplete&apos;)</span><br><span class="line">&quot; ================================== 其他配置 ===================================================</span><br><span class="line">&quot; 解决打开文件中文乱码的问题</span><br><span class="line">set fencs=utf-8,gbk,big5</span><br><span class="line">&quot; Ctrl + K 插入模式下光标向上移动</span><br><span class="line">imap &lt;c-k&gt; &lt;Up&gt;</span><br><span class="line">&quot; Ctrl + J 插入模式下光标向下移动</span><br><span class="line">imap &lt;c-j&gt; &lt;Down&gt;</span><br><span class="line">&quot; Ctrl + H 插入模式下光标向左移动</span><br><span class="line">imap &lt;c-h&gt; &lt;Left&gt;</span><br><span class="line">&quot; Ctrl + L 插入模式下光标向右移动</span><br><span class="line">imap &lt;c-l&gt; &lt;Right&gt;</span><br></pre></td></tr></table></figure></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2018/03/04/SpaceVimNeovim使用记录（2）Windows版配置 /" data-id="cjljpgr0e000y2oun7vgfr3jd" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-SpaceVimNeovim使用记录（1）Windows版安装" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/03/04/SpaceVimNeovim使用记录（1）Windows版安装/" class="article-date">
+  <time datetime="2018-03-04T02:44:49.000Z" itemprop="datePublished">2018-03-04</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/04/SpaceVimNeovim使用记录（1）Windows版安装/">Spacevim/Neovim使用记录（1）：Windows版安装</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://endenv.com/blog/post/nnsnow/SpaceVim%E4%BD%BF%E7%94%A8%E8%AE%B0%E5%BD%95" target="_blank" rel="noopener"><i class="fa fa-quora"></i>引用网络资源</a></p>
+<p><i class="fa fa-pencil"></i>支持Markdown</p>
+<h2 id="系列简介"><a href="#系列简介" class="headerlink" title="系列简介"></a>系列简介</h2><p>SpaceVim 是一个 Vim/Neovim 的配置和插件集合，可以快速方便的用 Vim/Neovim 打造传说中的 IDE ！</p>
+<p>在个人的体验中，发现 Neovim 和 SpaceVim 结合的体验较好，所以个人就选择了以 Neovim 来使用 SpaceVim。</p>
+<p>不过 vim/gvim 我还是必安装的（不做过多的配置），用来快速的编辑小文件。</p>
+<p>鉴于 Windows 用户基数远远大于 Linux/Mac，所以本系列以 Windows 下的使用体验开始。与官方文档不同的是，在有多种解决方案的情况下，本系列只使用一种……。</p>
+<p>（经过个人的一段时间的使用，发现 Windows 下使用很容易出现各种小问题，很多是插件对windows的兼容不够好，所以本人还是建议读者在 Linux/Mac 下用，本人之后会尝试一下 Windows10 的 Linux 子系统下 SpaceVim 的体验如何。 ）</p>
+<h2 id="Python安装"><a href="#Python安装" class="headerlink" title="Python安装"></a>Python安装</h2><ul>
+<li><p>直接官网下载 windows 版的 python 安装包安装，2 和 3 都要安装。</p>
+</li>
+<li><p>安装 pip<br>python2 需要单独安装 pip，下载 get-pip.py ，以管理员身份打开 cmd 运行即可。python3 自带 pip。<br>安装完 2 和 3 后，保证 2 的环境变量在 3 之前生效，也就是 cmd 运行 python 以及 pip –version 显示的是 python2 的。</p>
+</li>
+<li><p>将 python3 的 python.exe 复制一份为 python3.exe, pythonw.exe 复制一份为 pythonw3.exe，注意，是复制。</p>
+</li>
+<li><p>此时用 python/python3 或 py -2/py -3 可以使用两个环境的 python 命令，用 pip/pip3 或 py -2 -m pip/py -3 -m pip 可以分别使用两个环境的 pip 命令。</p>
+</li>
+</ul>
+<h2 id="基本安装"><a href="#基本安装" class="headerlink" title="基本安装"></a>基本安装</h2><ul>
+<li><p>安装 Visual C++ 2015 运行库</p>
+</li>
+<li><p>安装 <strong>Neovim</strong><br>  下载安装包，解压，将 bin 目录加入 path 即可。 如果出现 vcruntime140.dll 错误，下载 <code>vcruntime140.dll</code>，根据自己的系统环境放到 <code>C:\Windows\System32\</code> 或 <code>C:\Windows\SysWOW64\</code> 下。</p>
+</li>
+<li><p>安装 <strong>git</strong> （cmd 里可以使用 git 命令）</p>
+</li>
+<li><p>添加 <strong>neovim-python</strong><br>  以管理员身份启动 cmd：<br>  <code>py -2 -m pip install neovim</code><br>  <code>py -3 -m pip install neovim</code></p>
+</li>
+<li><p>安装 <code>DejaVu Sans Mono for PowerLine</code> 和 powerline extra symbols 字体<br>  注意：这里不要右键另存为的方式下载字体文件，需要 download 整个 git 项目才能正常安装。</p>
+</li>
+<li><p>安装 <strong>SpaceVim</strong><br>  启动 cmd：<br>  <code>git clone https://github.com/SpaceVim/SpaceVim.git AppData\Local\nvim</code></p>
+</li>
+<li><p>运行 <strong>nvim-qt.exe</strong>，会自动进行 <strong>SpaceVim</strong> 的安装。</p>
+</li>
+</ul>
+<p>安装完成后，如果出现 vimproc.dll 错误，可以下载 vimproc_win64(32).dll，放到 <code>C:\Users\&lt;Your Name&gt;\.cache\vimfiles\repos\github.com\Shougo\vimproc.vim\lib</code> 路径下。如果打开 nvim-qt.exe 时出现超时，可以 cmd 运行 nvim 看是否有什么错误。</p>
+<h2 id="依赖安装"><a href="#依赖安装" class="headerlink" title="依赖安装"></a>依赖安装</h2><ul>
+<li><strong>LLVM/Clang</strong><br>  官网下载 Windows 安装包直接安装即可，用于 C/C++ 的代码检查和编译。</li>
+<li><strong>Ctags</strong><br>  建议安装 Universal Ctags，它比 Exuberant Ctags 支持的语言特性要多。ctags 生成的 tags 标签用于语法树和代码跳转。</li>
+<li><strong>GNU Global</strong><br>  SpaceVim tags layer 使用的代码跳转程序。因为 global 原生支持的语言比较少，所以要启用 pygments 扩展来支持更多语言。用 pip 安装 pygments:<br>  <code>py -2 -m pip install pygments</code><br>  <code>py -3 -m pip install pygments</code><br>  然后将 global 安装目录下 <code>share\gtags\gtags.conf</code> 文件复制为 <code>C:\Users\&lt;Your Name&gt;\.globalrc</code><br>  编辑 .globalrc 文件，将 <code>:tc=native:</code><br>  修改为 <code>:tc=pygments-parser:tc=htags:</code>即可。</li>
+</ul>
+<h2 id="全屏启动"><a href="#全屏启动" class="headerlink" title="全屏启动"></a>全屏启动</h2><p>nvim-qt 启动时会缩成一小团，要手动调整窗口或者最大化，很不方便。<br>有两种解决办法：</p>
+<ol>
+<li>创建快捷方式指向 <strong>nvim-qt.exe</strong>，然后 <code>右键-&gt;属性</code> 在快捷方式的 <code>目标</code> 那里加上<code>--maximized</code>参数，例如<code>&quot;C:\Program Files\Neovim\bin\nvim-qt.exe&quot; --maximized</code>，使用该快捷方式就可以全屏打开 <strong>NeoVim</strong> 了。</li>
+<li><code>Win + r</code> 输入 regedit 打开注册表，新建项 <code>HKEY_CLASSES_ROOT-&gt;*-&gt;shell-&gt;nvim-qt-&gt;command</code>，将 <code>command</code> 的 “默认”数值数据设置为 nvim-qt.exe的路径，如：<code>&quot;C:\Program Files\Neovim\bin\nvim-qt.exe&quot; &quot;--maximized&quot; &quot;%1&quot;</code>, 这样就可以直接右键全屏打开 NeoVim 了。</li>
+</ol>
+<h2 id="BUG提交"><a href="#BUG提交" class="headerlink" title="BUG提交"></a>BUG提交</h2><p>如果你遇到了安装和使用的bug，可以在 <strong>githubZ</strong> 上面提<strong>issue</strong>，需要带上 <strong>SpaceVim</strong> 的调试信息，可以使用 <code>SPC h I</code> 获取到。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2018/03/04/SpaceVimNeovim使用记录（1）Windows版安装/" data-id="cjljpgr0h00112ounu8gcedy0" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Visual-Studio-Code-常用快捷键" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/24/Visual-Studio-Code-常用快捷键/" class="article-date">
+  <time datetime="2017-12-24T04:16:14.000Z" itemprop="datePublished">2017-12-24</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/24/Visual-Studio-Code-常用快捷键/">Visual Studio Code 常用快捷键</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="https://zhuzhuyule.com/blog/Experiences/Visual-Studio-Code-%E5%B8%B8%E7%94%A8%E5%BF%AB%E6%8D%B7%E9%94%AE.html" target="_blank" rel="noopener">原文链接</a></p>
+<h2 id="主命令框"><a href="#主命令框" class="headerlink" title="主命令框"></a>主命令框</h2><p><code>F1</code> 或 <code>Ctrl+Shift+P</code>: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：</p>
+<pre><code>按一下 `Backspace` 会进入到 `Ctrl+P` 模式
+在 `Ctrl+P` 下输入 &gt; 可以进入 `Ctrl+Shift+P` 模式
+在 `Ctrl+P` 窗口下还可以:
+    `文件名` 跳转到对应文件
+    `?` 列出当前可执行的动作
+    `!` 显示 Errors或 Warnings，也可以 `Ctrl+Shift+M`
+    `:` 跳转到行数，也可以 `Ctrl+G` 直接进入
+    `@` 跳转到 symbol（搜索变量或者函数），也可以 `Ctrl+Shift+O` 直接进入
+    `@` 根据分类跳转 symbol，查找属性或函数，也可以 `Ctrl+Shift+O` 后输入:进入
+    `#` 根据名字查找 symbol，也可以 `Ctrl+T`
+</code></pre><h2 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h2><h3 id="编辑器与终端窗口管理"><a href="#编辑器与终端窗口管理" class="headerlink" title="编辑器与终端窗口管理"></a>编辑器与终端窗口管理</h3><p>同时打开多个终端窗口（查看多个项目）</p>
+<pre><code>`Ctrl+Shift+N` 打开一个新窗口
+`Ctrl+Shift+W` 关闭窗口
+</code></pre><p>同时打开多个编辑器（查看多个文件）</p>
+<pre><code>`Ctrl+N 新建文件
+`Ctrl+Tab 文件之间切换
+`Ctrl+\ 切出一个新的编辑器（最多 3 个） ，也可以按住 `Ctrl +` 鼠标点击 Explorer 里的文件名
+`Ctrl+1`、`Ctrl+2`、`Ctrl+3`左中右 3 个编辑器的快捷键
+`Ctrl+ `` 3 个编辑器之间循环切换
+`Ctrl+k`然后按 ←/→ 编辑器换位置
+</code></pre><h2 id="代码编辑"><a href="#代码编辑" class="headerlink" title="代码编辑"></a>代码编辑</h2><h3 id="格式调整"><a href="#格式调整" class="headerlink" title="格式调整"></a>格式调整</h3><pre><code>`Ctrl+[` 、 `Ctrl+]` 代码行缩进
+`Shift+Alt+F` 代码格式化,或 `Ctrl+Shift+P` 后输入format code
+`Ctrl+C/X` 复制/剪切 当前行/当前选中内容
+`Alt+↑/↓` 上/下移动一行
+`Shift+Alt+↑/↓` 向上/向下复制一行
+`Ctrl+Enter` 在当前行下边插入一行
+`Ctrl+Shift+Enter` 在当前行上方插入一行
+</code></pre><h3 id="光标相关"><a href="#光标相关" class="headerlink" title="光标相关"></a>光标相关</h3><pre><code>`Home` 移动到行首
+`End` 移动到行尾
+`Ctrl+End` 移动到文件结尾
+`Ctrl+Home` 移动到文件开头
+`F12` 移动到定义处
+`Alt+F12` 定义处缩略图（只看一眼而不跳转过去）
+`Ctrl+Shift+]` 移动到后半个括号
+`Shift+End` 选择从光标到行尾
+`Shift+Home` 选择从行首到光标处
+`Ctrl+Delete` 删除光标右侧的所有字
+`Shift+Alt+←/→` 扩展/缩小选取范围
+`Ctrl+Alt+↑/↓`，`Alt+Shift+`鼠标左键 多行编辑(列编辑)
+`Ctrl+Shift+L` 同时选中所有匹配
+`Ctrl+D` 下一个匹配的也被选中
+`Ctrl+U` 回退上一个光标操作
+</code></pre><h3 id="重构代码"><a href="#重构代码" class="headerlink" title="重构代码"></a>重构代码</h3><pre><code>`Shift+F12` 找到所有的引用
+`Ctrl+F12` 同时修改本文件中所有匹配的
+`F2` 重命名比如要修改一个方法名，可以选中后按 ，输入新的名字，回车，会发现所有的文件都修改了
+`F8` 跳转到下一个 Error 或 Warning，当有多个错误时可以按 逐个跳转
+查看 diff; 在 explorer 里选择`文件右键`-&gt; `Set file to compare`-&gt;`需要对比的文件上右键选择`-&gt;`Compare with file_name_you_chose`
+</code></pre><h3 id="查找替换"><a href="#查找替换" class="headerlink" title="查找替换"></a>查找替换</h3><pre><code>`Ctrl+F` 查找
+`Ctrl+H` 查找替换
+`Ctrl+Shift+F` 整个文件夹中查找
+</code></pre><h2 id="显示相关"><a href="#显示相关" class="headerlink" title="显示相关"></a>显示相关</h2><pre><code>`F11全屏
+`Ctrl +/-` zoomIn/zoomOut
+`Ctrl+B` 侧边栏显/隐
+`Ctrl+Shift+E` 显示资源管理器
+`Ctrl+Shift+F` 显示搜索
+`Ctrl+Shift+G` 显示 Git
+`Ctrl+Shift+D` 显示 Debug
+`Ctrl+Shift+U` 显示 Output
+</code></pre><h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="自动保存"><a href="#自动保存" class="headerlink" title="自动保存"></a>自动保存</h3><p><code>File</code> -&gt; <code>AutoSave</code> ，或 <code>Ctrl+Shift+P</code>，输入 <code>auto</code><br>修改默认快捷键</p>
+<ul>
+<li>打开默认键盘快捷方式设置：<code>File</code>-&gt;<code>Preferences</code>-&gt;<code>Keyboard Shortcuts</code>，或<code>Alt+F</code>-&gt;<code>p</code>-&gt;<code>k</code></li>
+<li>修改 <code>keybindings.json</code>：</li>
+</ul>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">// Place your key bindings in this file to overwrite the defaults</span><br><span class="line">[</span><br><span class="line">    // ctrl+l 快速切换编辑器语言</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+l"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"workbench.action.editor.changeEncoding"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // ctrl+] 在explorer.exe中打开当前编辑文件</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+]"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"workbench.action.files.revealActiveFileInWindows"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // ctrl+shift+] 定位到VSCode资源管理器位置</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+shift+]"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"workbench.files.action.showActiveFileInExplorer"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // ctrl+space 被切换输入法快捷键占用</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"alt+space"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"editor.action.triggerSuggest"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorTextFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // ctrl+d 删除一行</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+d"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"editor.action.deleteLines"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorTextFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // 与删除一行的快捷键互换</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+shift+k"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"editor.action.addSelectionToNextFindMatch"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // ctrl+shift+/多行注释</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+shift+/"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"editor.action.blockComment"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorTextFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // 定制与 sublime 相同的大小写转换快捷键，需安装 TextTransform 插件</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+k ctrl+u"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"uppercase"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorTextFocus"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="attr">"key"</span>: <span class="string">"ctrl+k ctrl+l"</span>,</span><br><span class="line">        <span class="attr">"command"</span>: <span class="string">"lowercase"</span>,</span><br><span class="line">        <span class="attr">"when"</span>: <span class="string">"editorTextFocus"</span></span><br><span class="line">    &#125;</span><br><span class="line">]</span><br></pre></td></tr></table></figure>
+<h2 id="前端开发必备插件"><a href="#前端开发必备插件" class="headerlink" title="前端开发必备插件"></a>前端开发必备插件</h2><pre><code>PostCSS Sorting
+stylelint
+stylefmt
+ESLint
+javascript standard format
+beautify
+Babel ES6/ES7
+Debugger for Chrome
+Add jsdoc comments
+javascript(ES6) code snippets
+vue
+weex
+Reactjs code snippets
+React Native Tools
+Npm Intellisense
+Instant Markdown
+Markdown Shortcuts
+TextTransform
+</code></pre><h2 id="自定义设置参考"><a href="#自定义设置参考" class="headerlink" title="自定义设置参考"></a>自定义设置参考</h2><p>VS Code 自定义配置参考：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">"editor.fontSize"</span>: <span class="number">18</span>,</span><br><span class="line">    <span class="attr">"files.associations"</span>: &#123;</span><br><span class="line">        <span class="attr">"*.es"</span>: <span class="string">"javascript"</span>,</span><br><span class="line">        <span class="attr">"*.es6"</span>: <span class="string">"javascript"</span></span><br><span class="line">    &#125;,</span><br><span class="line">    // 控制编辑器是否应呈现空白字符</span><br><span class="line">    "editor.renderWhitespace": true,</span><br><span class="line">    // 启用后，将在保存文件时剪裁尾随空格。</span><br><span class="line">    "files.trimTrailingWhitespace": true,</span><br><span class="line">    // File extensions that can be beautified as javascript or JSON.</span><br><span class="line">    "beautify.JSfiles": [</span><br><span class="line">        "",</span><br><span class="line">        "es",</span><br><span class="line">        "es6",</span><br><span class="line">        "js",</span><br><span class="line">        "json",</span><br><span class="line">        "jsbeautifyrc",</span><br><span class="line">        <span class="string">"jshintrc"</span></span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p><a href="https://code.visualstudio.com/docs/getstarted/keybindings" target="_blank" rel="noopener">官方快捷键大全</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2017/12/24/Visual-Studio-Code-常用快捷键/" data-id="cjljpgr0m00182ounby4tqi1n" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software-life/">software; life;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-Python-3-x-格式化字符串笔记" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/21/Python-3-x-格式化字符串笔记/" class="article-date">
+  <time datetime="2017-12-21T04:07:16.000Z" itemprop="datePublished">2017-12-21</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/programming/">programming;</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/21/Python-3-x-格式化字符串笔记/">Python 3.x 格式化字符串笔记</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="python格式化字符串有-和-两种-字符串格式控制符"><a href="#python格式化字符串有-和-两种-字符串格式控制符" class="headerlink" title="python格式化字符串有%和{}两种 字符串格式控制符."></a>python格式化字符串有%和{}两种 字符串格式控制符.</h2><p>字符串输入数据格式类型(%格式操作符号)</p>
+<p><code>%%</code>百分号标记<br><code>%c</code>字符及其ASCII码<br><code>%s</code>字符串<br><code>%d</code>有符号整数(十进制)<br><code>%u</code>无符号整数(十进制)<br><code>%o</code>无符号整数(八进制)<br><code>%X</code>无符号整数(十六进制大写字符)<br><code>%x</code>无符号整数(十六进制)<br><code>%e</code>浮点数字(科学计数法)<br><code>%E</code>浮点数字(科学计数法，用E代替e)<br><code>%f</code>浮点数字(用小数点符号)<br><code>%g</code>浮点数字(根据值的大小采用%e或%f)<br><code>%G</code>浮点数字(类似于%g)<br><code>%p</code>指针(用十六进制打印值的内存地址)<br><code>%n</code>存储输出字符的数量放进参数列表的下一个变量中</p>
+<h2 id="字符串格式控制-name-flag-width-precision-type"><a href="#字符串格式控制-name-flag-width-precision-type" class="headerlink" title="字符串格式控制%[(name)][flag][width][.][precision]type"></a>字符串格式控制%[(name)][flag][width][.][precision]type</h2><p>name:可为空，数字(占位),命名(传递参数名,不能以数字开头)以字典格式映射格式化，其为键名</p>
+<p>flag:标记格式限定符号,包含+-#和0,+表示右对齐(会显示正负号),-左对齐,前面默认为填充空格(即默认右对齐)，0表示填充0，#表示八进制时前面补充0,16进制数填充0x,二进制填充0b</p>
+<p>width:宽度(最短长度,包含小数点,小于width时会填充)</p>
+<p>precision:小数点后的位数,与C相同</p>
+<p>type:输入格式类型，请看上面</p>
+<h2 id="还有一种format-spec格式-name-fill-align-sign-0-width-precision-type"><a href="#还有一种format-spec格式-name-fill-align-sign-0-width-precision-type" class="headerlink" title="还有一种format_spec格式{[name][:][[fill]align][sign][#][0][width][,][.precision][type]}"></a>还有一种format_spec格式{[name][:][[fill]align][sign][#][0][width][,][.precision][type]}</h2><p>用{}包裹name命名传递给format以命名=值 写法,非字典映射,其他和上面相同</p>
+<p>fill =  <any character="">　　#fill是表示可以填写任何字符</any></p>
+<p>align =  “&lt;” | “&gt;” | “=” | “^”　　#align是对齐方式，&lt;是左对齐， &gt;是右对齐，^是居中对齐。</p>
+<p>sign  =  “+” | “-“ | “ “　　#sign是符号， +表示正号， -表示负号</p>
+<p>width =  integer　　#width是数字宽度，表示总共输出多少位数字</p>
+<p>precision =  integer　　#precision是小数保留位数</p>
+<p>type =  “b” | “c” | “d” | “e” | “E” | “f” | “F” | “g” | “G” | “n” | “o” | “s” | “x” | “X” | “%”　　#type是输出数字值是的表示方式，比如b是二进制表示；比如E是指数表示；比如X是十六进制表示</p>
+<p>例子</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="string">"&#123;:,&#125;"</span>.format(<span class="number">123456</span>))<span class="comment">#输出1234,56</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;a:w^8&#125;"</span>.format(a=<span class="string">"8"</span>))<span class="comment">#输出www8wwww,填充w</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"%.5f"</span> %<span class="number">5</span>)<span class="comment">#输出5.000000</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"%-7s3"</span> %(<span class="string">"python"</span>))<span class="comment">#输出python 3</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"%.3e"</span> %<span class="number">2016</span>)<span class="comment">#输出2.016e+03,也可以写大E</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"%d %s"</span> %(<span class="number">123456</span>,<span class="string">"myblog"</span>))<span class="comment">#输出123456 myblog</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"%(what)s is %(year)d"</span> % &#123;<span class="string">"what"</span>:<span class="string">"this year"</span>,<span class="string">"year"</span>:<span class="number">2016</span>&#125;)<span class="comment">#输出this year is 2016</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;0&#125;&#123;1&#125;"</span>.format(<span class="string">"hello"</span>,<span class="string">"fun"</span>))<span class="comment">#输出hellofun,这与CSharp的格式化字符(占位符)相似</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;&#125;&#123;&#125;&#123;&#125;"</span>.format(<span class="string">"spkk"</span>,<span class="string">"."</span>,<span class="string">"cn"</span>))<span class="comment">#输出spkk.cn</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;a[0]&#125;&#123;a[1]&#125;&#123;a[2]&#125;"</span>.format(a=[<span class="string">"spkk"</span>,<span class="string">"."</span>,<span class="string">"cn"</span>]))<span class="comment">#输出spkk.cn</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;dict[host]&#125;&#123;dict[dot]&#125;&#123;dict[domain]&#125;"</span>.format(dict=&#123;<span class="string">"host"</span>:<span class="string">"www"</span>,<span class="string">"domain"</span>:<span class="string">"spkk.cn"</span>,<span class="string">"dot"</span>:<span class="string">"."</span>&#125;))<span class="comment">#输出www.spkk.cn</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;a&#125;&#123;b&#125;"</span>.format(a=<span class="string">"python"</span>,b=<span class="string">"3"</span>))<span class="comment">#输出python3</span></span><br><span class="line"></span><br><span class="line">print(<span class="string">"&#123;who&#125; &#123;doing&#125; &#123;0&#125;"</span>.format(<span class="string">"python"</span>,doing=<span class="string">"like"</span>,who=<span class="string">"I"</span>))<span class="comment">#输出I like python</span></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2017/12/21/Python-3-x-格式化字符串笔记/" data-id="cjljpgr0a000r2oun5atyz98h" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software-life/">software; life;</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-222" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/12/21/222/" class="article-date">
+  <time datetime="2017-12-21T04:06:41.000Z" itemprop="datePublished">2017-12-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/21/222/">222</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="anson2416.github.io/2017/12/21/222/" data-id="cjljpgqz600022ounzg6ulb9h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -116,23 +744,47 @@
   
 
 
+  <nav id="page-nav">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/">__('next') &raquo;</a>
+  </nav>
 </section>
         
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life;</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming;</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">life;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-JavaScript/">software; JavaScript;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-life/">software; life;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test-hexo/">test;hexo;</a></li></ul>
+    </div>
+  </div>
+
 
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 12px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 18px;">hexo</a> <a href="/tags/life/" style="font-size: 12px;">life;</a> <a href="/tags/software/" style="font-size: 20px;">software</a> <a href="/tags/software/" style="font-size: 16px;">software;</a> <a href="/tags/software-JavaScript/" style="font-size: 10px;">software; JavaScript;</a> <a href="/tags/software-life/" style="font-size: 14px;">software; life;</a> <a href="/tags/test/" style="font-size: 14px;">test;</a> <a href="/tags/test-hexo/" style="font-size: 10px;">test;hexo;</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
     </div>
   </div>
 
@@ -145,7 +797,23 @@
       <ul>
         
           <li>
+            <a href="/2018/09/02/HEXO下的Markdown语法-GFM-写博客/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2018/09/02/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/01/懒/">懒3</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/25/我的同事娜姐/">我的同事娜姐</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/">Spacevim/Neovim使用记录（3）：常用操作</a>
           </li>
         
       </ul>
@@ -175,7 +843,7 @@
 </nav>
     
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 
 
   <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
@@ -183,8 +851,6 @@
 
 
 <script src="/js/script.js"></script>
-
-
 
   </div>
 </body>
