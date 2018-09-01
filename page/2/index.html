@@ -1,1139 +1,3186 @@
 <!DOCTYPE html>
-<html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
   
-  <title>title</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="xxx">
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
 <meta property="og:type" content="website">
-<meta property="og:title" content="title">
-<meta property="og:url" content="anson2416.github.io/page/2/index.html">
-<meta property="og:site_name" content="title">
-<meta property="og:description" content="xxx">
-<meta property="og:locale" content="default">
+<meta property="og:title" content="小飞机的博客">
+<meta property="og:url" content="http://yoursite.com/page/2/index.html">
+<meta property="og:site_name" content="小飞机的博客">
+<meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="title">
-<meta name="twitter:description" content="xxx">
+<meta name="twitter:title" content="小飞机的博客">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/page/2/"/>
+
+
+
+
+
+  <title>
+Hexo, NexT - 小飞机的博客
+
+
+</title>
   
-    <link rel="alternate" href="/atom.xml" title="title" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <!--<link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">-->
-  
-  <link rel="stylesheet" href="/css/style.css">
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">title</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">2</a>
-        </h2>
-      
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left 
+   page-home 
+ ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小飞机的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      
+        <p class="site-subtitle">一直沉默的猪</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
         
-          <a class="main-nav-link" href="/">Home</a>
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
         
-          <a class="main-nav-link" href="/archives">Archives</a>
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
         
-      </nav>
-      <nav id="sub-nav">
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
         
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
         
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="anson2416.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-慎用福昕foxit-PDF阅读器" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/11/05/慎用福昕foxit-PDF阅读器/" class="article-date">
-  <time datetime="2017-11-05T15:24:37.000Z" itemprop="datePublished">2017-11-05</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming;</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/05/慎用福昕foxit-PDF阅读器/">慎用福昕foxit PDF阅读器</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
       
-        <p>前几个星期就注意到打开电脑之后，屏幕得右下角会出现广告</p>
-<ul>
-<li>淘宝的广告</li>
-<li>双十一的广告</li>
-</ul>
-<p><img src="http://oxox7elwf.bkt.clouddn.com/201711052235_120.png" alt="很喜庆的广告"></p>
-<p>现在谜团终于揭开了，广告来源：“福昕(foxit) pdf 阅读器”。<br><strong>怒删！</strong></p>
-<p><code>V2EX</code>讨论链接： <a href="https://www.v2ex.com/t/403442?p=2" target="_blank" rel="noopener">慎用“福昕(foxit) pdf 阅读器”</a></p>
-<hr>
-<p><span id="inline-purple">一些思考</span></p>
-<ol>
-<li><p><strong>定位广告：</strong><br>可以使用<code>Process Explorer</code> 分析定位进程来确定广告来源<br>不过我用 win10，用任务管理器就可以看到弹窗是 foxitmini<br>这应该是国内软件代理商搞的鬼，下英文版不会有</p>
-</li>
-<li><p><strong>PDF阅读器的代替品：</strong><br><code>Adobe Acrobat/Adobe Reader</code>, <code>Sumatra PDF</code>, <code>Chrome/Firefox/Edge</code>, <code>PDF X-Change Editor</code>, <code>win10 的话商店搜 xodo</code>等</p>
-</li>
-</ol>
 
       
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/11/05/慎用福昕foxit-PDF阅读器/" data-id="cjljpgr12001w2oun3eq40vb4" class="article-share-link">Share</a>
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
       
+    </ul>
+  
+
+  
+    <div class="site-search">
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software-life/">software; life;</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-前端学习笔记之观察者模式" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/22/前端学习笔记之观察者模式/" class="article-date">
-  <time datetime="2017-10-22T12:13:32.000Z" itemprop="datePublished">2017-10-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming;</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/前端学习笔记之观察者模式/">前端学习笔记之观察者模式</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="前端学习笔记之观察者模式"><a href="#前端学习笔记之观察者模式" class="headerlink" title="前端学习笔记之观察者模式"></a>前端学习笔记之观察者模式</h1><hr>
-<blockquote>
-<p>观察者模式也称”发布-订阅”模式,它的作用就是当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知，自动刷新对象状态</p>
-</blockquote>
-<p>举个生活比较常见常见的例子,比如你去面试之后，面试官看你表现不错，最后会跟你要联系方式，以便之后可以联系你。在这角色扮演当中，你就是“订阅者”，面试官就是“发布者”。</p>
-<p>那么发布订阅模式是咋实现的呢？</p>
-<p><strong>思路</strong></p>
-<ol>
-<li>给定一个发布者</li>
-<li>面试者将联系方式给发布者</li>
-<li>发布者的一个列表有各种职位(web端的，java 的)，里面记载回调函数以便通知这些面试者</li>
-<li>最后发布消息的时候，会遍历这个列表的职位的回调函数，告诉面试者面试这个职位是通过还是不通过</li>
-<li>如果面试者取消了订阅，那么将回调函数和之前的回调函数作对比，如果相等，就将这个面试者的上班通知去掉<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> Event = (<span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> events = &#123;&#125;; <span class="comment">//发布者</span></span><br><span class="line">  <span class="comment">//subscribe也就是订阅，post 代表面试者要面的职位，callback表示为回调函数</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">subscribe</span>(<span class="params">post, callback</span>) </span>&#123;</span><br><span class="line">    events[post] = events[post] || []; <span class="comment">//发布者的列表里有没有这个面试职位，如果没有就创建一个空数组</span></span><br><span class="line">    events[post].push(callback);</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//publish 表示发布</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">publish</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> post = <span class="built_in">Array</span>.prototype.shift.call(<span class="built_in">arguments</span>); <span class="comment">//第一个参数指定“键”</span></span><br><span class="line">    <span class="keyword">var</span> fns = events[post]; <span class="comment">//设置缓存，提高性能</span></span><br><span class="line">    <span class="keyword">if</span> (!fns) &#123; <span class="comment">//如果发布者的列表里没有这个职位，那肯定是不能发布</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; fns.length; i++) &#123; <span class="comment">//遍历当前的职位的数组里有几个面试者</span></span><br><span class="line">      fns[i].apply(<span class="keyword">this</span>, <span class="built_in">arguments</span>);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="comment">//unsubscribe 表示取消订阅</span></span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">unsubscribe</span>(<span class="params">post, fn</span>) </span>&#123;</span><br><span class="line">    <span class="keyword">var</span> fns = events[post];</span><br><span class="line">    <span class="keyword">if</span> (fns) &#123;</span><br><span class="line">      <span class="keyword">if</span> (fn) &#123;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">var</span> i = fns.length; i &gt;= <span class="number">0</span>; i--) &#123;</span><br><span class="line">          <span class="keyword">if</span> (fns[i] === fn) fns.splice(i, <span class="number">1</span>);</span><br><span class="line">        &#125;</span><br><span class="line">      &#125; <span class="keyword">else</span> &#123;<span class="comment">//如果没有传入fn回调函数，直接取消post对应消息的所有订阅</span></span><br><span class="line">        fns = [];</span><br><span class="line">      &#125;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;<span class="comment">//如果发布者的列表没有这个职位，直接 return</span></span><br><span class="line">      <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">return</span> &#123;</span><br><span class="line">    subscribe: subscribe,</span><br><span class="line">    publish: publish,</span><br><span class="line">    unsubscribe: unsubscribe</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;)();</span><br></pre></td></tr></table></figure>
-</li>
-</ol>
-<p>测试：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> fn1 = <span class="function"><span class="keyword">function</span>(<span class="params">time</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"小明你通过了面试，上班时间："</span> + time);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="keyword">var</span> fn2 = <span class="function"><span class="keyword">function</span>(<span class="params">time</span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="string">"小强你通过了面试，上班时间："</span> + time);</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">//小明将联系方式给了发布者，发布者（hr）觉得小明不错，可以通过，于是在列表(java)里写下了一些回调函数，到时候发布的时候将上班时间告诉小明</span></span><br><span class="line">Event.subscribe(<span class="string">"java"</span>, fn1);</span><br><span class="line"><span class="comment">//小强也订阅了</span></span><br><span class="line">Event.subscribe(<span class="string">"java"</span>, fn2);</span><br><span class="line">Event.publish(<span class="string">"java"</span>, <span class="string">"2017-10-01"</span>);</span><br><span class="line"><span class="comment">/*输出:</span></span><br><span class="line"><span class="comment">小明你通过了面试，上班时间：2017-10-01</span></span><br><span class="line"><span class="comment">小强你通过了面试，上班时间：2017-10-01</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line">Event.unsubscribe(<span class="string">"java"</span>, fn1);<span class="comment">//删除小明的上班通知</span></span><br><span class="line">Event.publish(<span class="string">"java"</span>, <span class="string">"2017-10-01"</span>);</span><br><span class="line"><span class="comment">/*输出：</span></span><br><span class="line"><span class="comment">小强你通过了面试，上班时间：2017-10-01</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
-<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p><a href="http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html" target="_blank" rel="noopener">Javascript异步编程的4种方法</a><br><a href="https://segmentfault.com/a/1190000007248460" target="_blank" rel="noopener">js设计模式笔记 - 观察者模式</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/22/前端学习笔记之观察者模式/" data-id="cjljpgr0q001f2oun2z2yhkg7" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software-JavaScript/">software; JavaScript;</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Haroopad-syntax" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/22/Haroopad-syntax/" class="article-date">
-  <time datetime="2017-10-22T12:11:38.000Z" itemprop="datePublished">2017-10-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/Haroopad-syntax/">Haroopad syntax</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="Standard-Markdown"><a href="#Standard-Markdown" class="headerlink" title="Standard Markdown"></a>Standard Markdown</h2><ul>
-<li>\   backslash</li>
-<li>`   backtick</li>
-<li>*   asterisk</li>
-<li>_   underscore</li>
-<li>{}  curly braces</li>
-<li>[]  square brackets</li>
-<li>()  parentheses</li>
-<li>#   hash mark</li>
-<li>+   plus sign</li>
-<li>-   minus sign (hyphen)</li>
-<li>.   dot</li>
-<li>!   exclamation mark</li>
-</ul>
-<h5 id="HEADERS"><a href="#HEADERS" class="headerlink" title="HEADERS"></a>HEADERS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">=============</span><br><span class="line"></span><br><span class="line">This is an H2</span><br><span class="line">-------------</span><br></pre></td></tr></table></figure>
-<p>Any number of underlining =’s or -’s will work.</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># This is an H1</span></span><br><span class="line"></span><br><span class="line"><span class="section">## This is an H2</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### This is an H6</span></span><br></pre></td></tr></table></figure>
-<h5 id="BLOCKQUOTES"><a href="#BLOCKQUOTES" class="headerlink" title="BLOCKQUOTES"></a>BLOCKQUOTES</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; This is the first level of quoting.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; &gt; This is nested blockquote.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; Back to the first level.</span></span><br></pre></td></tr></table></figure>
-<p>Blockquotes can contain other Markdown elements, including headers, lists, and code blocks:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; ## This is a header.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; 1.   This is the first list item.</span></span><br><span class="line"><span class="quote">&gt; 2.   This is the second list item.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; Here's some example code:</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt;     return shell_exec("echo $input | $markdown_script");</span></span><br></pre></td></tr></table></figure>
-<h5 id="LISTS"><a href="#LISTS" class="headerlink" title="LISTS"></a>LISTS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*   </span>Red</span><br><span class="line"><span class="bullet">*   </span>Green</span><br><span class="line"><span class="bullet">*   </span>Blue</span><br></pre></td></tr></table></figure>
-<p>is equivalent to:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">+   </span>Red</span><br><span class="line"><span class="bullet">+   </span>Green</span><br><span class="line"><span class="bullet">+   </span>Blue</span><br></pre></td></tr></table></figure>
-<p>and:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-   Red</span><br><span class="line">-   Green</span><br><span class="line">-   Blue</span><br></pre></td></tr></table></figure>
-<p>Ordered lists use numbers followed by periods:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1.  Bird</span><br><span class="line">2.  McHale</span><br><span class="line">3.  Parish</span><br></pre></td></tr></table></figure>
-<h5 id="CODE-BLOCKS"><a href="#CODE-BLOCKS" class="headerlink" title="CODE BLOCKS"></a>CODE BLOCKS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">This is a normal paragraph:</span><br><span class="line"></span><br><span class="line"><span class="code">    This is a code block.</span></span><br></pre></td></tr></table></figure>
-<p>One level of indentation — 4 spaces or 1 tab — is removed from each line of the code block. For example, this:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Here is an example of AppleScript:</span><br><span class="line"></span><br><span class="line"><span class="code">    tell application "Foo"</span></span><br><span class="line"><span class="code">        beep</span></span><br><span class="line"><span class="code">    end tell</span></span><br></pre></td></tr></table></figure>
-<h5 id="HORIZONTAL-RULES"><a href="#HORIZONTAL-RULES" class="headerlink" title="HORIZONTAL RULES"></a>HORIZONTAL RULES</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span><span class="bullet">* *</span></span><br><span class="line"></span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line"></span><br><span class="line"><span class="strong">*****</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>- -</span><br><span class="line"></span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
-<h5 id="LINKS"><a href="#LINKS" class="headerlink" title="LINKS"></a>LINKS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">This is [<span class="string">an example</span>](<span class="link">http://example.com/ "Title"</span>) inline link.</span><br><span class="line"></span><br><span class="line">[<span class="string">This link</span>](<span class="link">http://example.net/</span>) has no title attribute.</span><br></pre></td></tr></table></figure>
-<p>Here’s an example of reference links in action:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">I get 10 times more traffic from [<span class="string">Google</span>][<span class="symbol"></span>] than from</span><br><span class="line">[<span class="string">Yahoo</span>][<span class="symbol"></span>] or [<span class="string">MSN</span>][<span class="symbol"></span>].</span><br><span class="line"></span><br><span class="line">  [google]: http://google.com/        "Google"</span><br><span class="line">  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"</span><br><span class="line">  [msn]:    http://search.msn.com/    "MSN Search"</span><br></pre></td></tr></table></figure>
-<h5 id="EMPHASIS"><a href="#EMPHASIS" class="headerlink" title="EMPHASIS"></a>EMPHASIS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*single asterisks*</span></span><br><span class="line"></span><br><span class="line"><span class="emphasis">_single underscores_</span>  (not support in haroopad)</span><br><span class="line"></span><br><span class="line"><span class="strong">**double asterisks**</span></span><br><span class="line"></span><br><span class="line"><span class="strong">__double underscores__</span></span><br></pre></td></tr></table></figure>
-<h5 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Use the <span class="code">`printf()`</span> function.</span><br></pre></td></tr></table></figure>
-<p>Use the <code>printf()</code> function.</p>
-<h5 id="IMAGES"><a href="#IMAGES" class="headerlink" title="IMAGES"></a>IMAGES</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Alt text</span>](<span class="link">/path/to/img.jpg</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">Alt text</span>](<span class="link">/path/to/img.jpg "Optional title"</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">Alt text</span>][<span class="symbol">id</span>]</span><br><span class="line">[<span class="symbol">id</span>]: <span class="link">/path/to/img.jpg "Optional title"</span></span><br></pre></td></tr></table></figure>
-<h5 id="EMAIL"><a href="#EMAIL" class="headerlink" title="EMAIL"></a>EMAIL</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Contact to &lt;example@example.com&gt;.</span><br></pre></td></tr></table></figure>
-<p>Contact to <a href="mailto:&#101;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;" target="_blank" rel="noopener">&#101;&#x78;&#97;&#109;&#x70;&#108;&#101;&#x40;&#101;&#x78;&#x61;&#109;&#x70;&#x6c;&#101;&#x2e;&#x63;&#111;&#109;</a>.</p>
-<h2 id="Github-Flavored-Markdown"><a href="#Github-Flavored-Markdown" class="headerlink" title="Github Flavored Markdown"></a>Github Flavored Markdown</h2><blockquote>
-<p>ref: <a href="https://help.github.com/articles/github-flavored-markdown" target="_blank" rel="noopener">https://help.github.com/articles/github-flavored-markdown</a></p>
-</blockquote>
-<h5 id="Newlines"><a href="#Newlines" class="headerlink" title="Newlines"></a>Newlines</h5><p>The next paragraph contains two phrases separated by a single newline character</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Haroopad</span><br><span class="line">The next document processor</span><br></pre></td></tr></table></figure>
-<p>Haroopad<br>The next document processor</p>
-<h5 id="Multiple-underscores-in-words"><a href="#Multiple-underscores-in-words" class="headerlink" title="Multiple underscores in words"></a>Multiple underscores in words</h5><p>It is not reasonable to italicize just part of a word, especially when you’re dealing with code and names often appear with multiple underscores. Therefore, GFM ignores multiple underscores in words.</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">perform<span class="emphasis">_complicated_</span>task</span><br><span class="line">do<span class="emphasis">_this_</span>and<span class="emphasis">_do_</span>that<span class="emphasis">_and_</span>another_thing</span><br></pre></td></tr></table></figure>
-<p>perform_complicated_task<br>do_this_and_do_that_and_another_thing</p>
-<h5 id="URL-autolinking"><a href="#URL-autolinking" class="headerlink" title="URL autolinking"></a>URL autolinking</h5><p>GFM will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.</p>
-<h5 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h5><p>Tables aren’t part of the core Markdown spec, but they are part of GFM and Markdown Here supports them.</p>
-<p>Colons(:) can be used to align columns.</p>
-<p>Left   : <code>|:------|</code><br>Right  : <code>|------:|</code><br>Center : <code>|:-----:|</code></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| name  | age | gender    | money  |</span><br><span class="line">|-------|:---:|-----------|-------:|</span><br><span class="line">| rhio  | 384 | robot     | $3,000 |</span><br><span class="line">| haroo | .3  | bird      | $430   |</span><br><span class="line">| jedi  | ?   | undefined | $0     |</span><br></pre></td></tr></table></figure>
-<table>
-<thead>
-<tr>
-<th>name</th>
-<th style="text-align:center">age</th>
-<th>gender</th>
-<th style="text-align:right">money</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>rhio</td>
-<td style="text-align:center">384</td>
-<td>robot</td>
-<td style="text-align:right">$3,000</td>
-</tr>
-<tr>
-<td>haroo</td>
-<td style="text-align:center">.3</td>
-<td>bird</td>
-<td style="text-align:right">$430</td>
-</tr>
-<tr>
-<td>jedi</td>
-<td style="text-align:center">?</td>
-<td>undefined</td>
-<td style="text-align:right">$0</td>
-</tr>
-</tbody>
-</table>
-<h5 id="Fenced-code-blocks"><a href="#Fenced-code-blocks" class="headerlink" title="Fenced code blocks"></a>Fenced code blocks</h5><p>Markdown converts text with four spaces at the front of each line to code blocks. GFM supports that, but we also support fenced blocks. Just wrap your code blocks in <figure class="highlight plain"><figcaption><span>you won't need to indent manually to trigger a code block. Keep in mind that both types of code blocks need to have a blank line before them:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Here&apos;s an example:</span><br></pre></td></tr></table></figure></p>
-<p>function test() {<br>  console.log(“notice the blank line before this function?”);<br>}<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">##### Syntax highlighting</span><br><span class="line"></span><br><span class="line">We take code blocks a step further and add syntax highlighting if you request it. In your fenced block, add an optional language identifier and we&apos;ll run it through syntax highlighting. For example, to syntax highlight Ruby code:</span><br><span class="line"></span><br><span class="line">```ruby</span><br><span class="line">require &apos;redcarpet&apos;</span><br><span class="line">markdown = Redcarpet.new(&quot;Hello World!&quot;)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></table></figure></p>
-<h5 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h5><p>A table of contents, usually headed simply “Contents” and abbreviated informally as TOC, is a list of the parts of a book or document organized in the order in which the parts appear.</p>
-<p>It will generate a table of content that you can insert <code>[TOC]</code> at the top of your markdown file.</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[TOC]</span><br><span class="line"></span><br><span class="line"># Header 1</span><br><span class="line">Content 1</span><br><span class="line"></span><br><span class="line">## Header 2</span><br><span class="line">Content 2</span><br></pre></td></tr></table></figure>
-<p><strong>example</strong></p>
-<p>[TOC]</p>
-<h2 id="Extras-only-haroopad"><a href="#Extras-only-haroopad" class="headerlink" title="Extras (only haroopad)"></a>Extras (only haroopad)</h2><blockquote>
-<p>Experimental since v0.6.0</p>
-</blockquote>
-<h5 id="Highlight"><a href="#Highlight" class="headerlink" title="Highlight"></a>Highlight</h5><p><strong>Highlight</strong> (and highlights, highlighting, etc.) may refer to:</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Syntax ==highlighting==, <span class="strong">**display of text**</span> in different colors and/or fonts, depending upon its meaning in context (e.g. different parts of speech in a sentence, or ==function==  vs. ==variables names== in computer source code)</span><br></pre></td></tr></table></figure>
-<p>Syntax ==highlighting==, <strong>display of text</strong> in different colors and/or fonts, depending upon its meaning in context (e.g. different parts of speech in a sentence, or ==function== vs. ==variables names== in computer source code)</p>
-<h5 id="Underline"><a href="#Underline" class="headerlink" title="Underline"></a>Underline</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">An ++underline++, also called an underscore is one or more horizontal lines immediately below a portion of writing.</span><br></pre></td></tr></table></figure>
-<p>An ++underline++, also called an underscore is one or more ++horizontal lines++ immediately below a portion of writing.</p>
-<h5 id="Embedding"><a href="#Embedding" class="headerlink" title="Embedding"></a>Embedding</h5><p>웹 문서를 작성하다 보면 비디오, 음악을 포함한 다양한 온라인 콘텐츠를 이용하기 마련이다.  이에 경량의 문법을 이용하는 마크다운의 특성을 유지하고 기존의 마크다운 사용자 경험에 크게 벗어나지 않으며 강력한 웹 콘텐츠를 문서내에 쉽게 추가할 수 있도록 새로운 문법을 추가하였다.</p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@[<span class="string">Vimeo Video</span>](<span class="link">https://vimeo.com/70762354 'float:left;width:400px'</span>)</span><br><span class="line"></span><br><span class="line"><span class="strong">**Haroopad**</span> is a markdown enabled document processor for creating web-friendly documents.</span><br><span class="line"></span><br><span class="line">You can author professional-looking documents of various formats: blog posts, slides, presentations, reports, email and more.</span><br><span class="line"></span><br><span class="line">Haroopad gives you the same editing experience regardless of the platform you are working on. It runs on all three major operating systems—Windows, Mac OS X, and Linux.</span><br><span class="line"></span><br><span class="line">![<span class="string">haroopad icon</span>](<span class="link">http://pad.haroopress.com/assets/images/logo-small.png</span>)</span><br></pre></td></tr></table></figure>
-<p>@<a href="https://vimeo.com/70762354" title="float:left;width:500px;height:300px;margin-right:10px;" target="_blank" rel="noopener">Haroopad intro</a></p>
-<p><strong>Haroopad</strong> is a markdown enabled document processor for creating web-friendly documents.</p>
-<p>You can author professional-looking documents of various formats: blog posts, slides, presentations, reports, email and more.</p>
-<p>Haroopad gives you the same editing experience regardless of the platform you are working on. It runs on all three major operating systems—Windows, Mac OS X, and Linux.</p>
-<p><img src="http://pad.haroopress.com/assets/images/logo-small.png" alt="haroopad icon"></p>
-<h5 id="Mathematics-Expression"><a href="#Mathematics-Expression" class="headerlink" title="Mathematics Expression"></a>Mathematics Expression</h5><p>Haroopad uses MathJax to render LaTeX. You can use triple dollar sign (<code>$$$..$$$</code>) to delimit inline equations, and double dollars (<code>$$..$$</code>) for blocks</p>
-<p><strong>example</strong></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">The <span class="emphasis">*Gamma function*</span> satisfying $\Gamma(n) = (n-1)!\quad\forall</span><br><span class="line">n\in\mathbb N$ is via through the Euler integral</span><br><span class="line"></span><br><span class="line">$$</span><br><span class="line">\Gamma(z) = \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
-<p><strong>become</strong></p>
-<p>The <em>Gamma function</em> satisfying $\Gamma(n) = (n-1)!\quad\forall<br>n\in\mathbb N$ is via through the Euler integral</p>
-<p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.<br>$$</p>
-<h5 id="Diagram"><a href="#Diagram" class="headerlink" title="Diagram"></a>Diagram</h5><p>This statement helps to render the flow charts and diagrams to extend the fence code block.</p>
-<p>Just write the <code>mermaid</code> grammar in the fenced code block, as in the example below.</p>
-<p>You get the detail - <a href="https://github.com/knsv/mermaid/wiki" target="_blank" rel="noopener">Click Here</a></p>
-<p><strong>example</strong></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph TD;</span></span><br><span class="line"><span class="code">  A--&gt;B;</span></span><br><span class="line"><span class="code">  A--&gt;D;</span></span><br><span class="line"><span class="code">  B--&gt;C;</span></span><br><span class="line"><span class="code">  D--&gt;C;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
-<p><strong>become</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">  A--&gt;B;</span><br><span class="line">  A--&gt;D;</span><br><span class="line">  B--&gt;C;</span><br><span class="line">  D--&gt;C;</span><br></pre></td></tr></table></figure>
-<h5 id="Tasklist"><a href="#Tasklist" class="headerlink" title="Tasklist"></a>Tasklist</h5><p>So that it can be represented as a checkbox item GFM statement.<br>This statement is useful when you create the TODO or Checklist.</p>
-<p><strong>example</strong></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>[ ] first task</span><br><span class="line"><span class="bullet">- </span>[x] second task is done</span><br><span class="line"><span class="bullet">- </span>[ ] third task</span><br></pre></td></tr></table></figure>
-<ul>
-<li style="list-style: none"><input type="checkbox"> first task</li>
-<li style="list-style: none"><input type="checkbox" checked> second task is done</li>
-<li style="list-style: none"><input type="checkbox"> third task</li>
-</ul>
-<h5 id="Presentation"><a href="#Presentation" class="headerlink" title="Presentation"></a>Presentation</h5><p>Just insert <code>***</code> or <code>---</code> separator to separate each slide.</p>
-<p><strong>example</strong></p>
-<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## slide1 title</span></span><br><span class="line"></span><br><span class="line">slide2 content</span><br><span class="line"></span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line"></span><br><span class="line"><span class="section">## slide2 title</span></span><br><span class="line"></span><br><span class="line">slide2 content</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/22/Haroopad-syntax/" data-id="cjljpgqzg00062oun5aw6c8qj" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-自动备份Hexo博客源文件" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/22/自动备份Hexo博客源文件/" class="article-date">
-  <time datetime="2017-10-22T01:35:28.000Z" itemprop="datePublished">2017-10-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/自动备份Hexo博客源文件/">自动备份Hexo博客源文件</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="自动备份Hexo博客源文件"><a href="#自动备份Hexo博客源文件" class="headerlink" title="自动备份Hexo博客源文件"></a>自动备份Hexo博客源文件</h2><p><a href="https://notes.wanghao.work/2015-07-06-%25E8%2587%25AA%25E5%258A%25A8%25E5%25A4%2587%25E4%25BB%25BDHexo%25E5%258D%259A%25E5%25AE%25A2%25E6%25BA%2590%25E6%2596%2587%25E4%25BB%25B6.html" target="_blank" rel="noopener">原文链接</a></p>
-<hr>
-<p>  用Hexo写博客是一件比较享受的事情，无奈如果换电脑的话，备份博客就是一件比较闹心的事情。</p>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>  我曾经给出过通过Git备份Hexo博客源文件的方式，这种方式虽然能够备份Hexo博客的源文件，但是对于博主这种懒人，每次更新博文都需要输入两三行重复的Git命令真是一件麻烦的事情。况且指不定哪天就搞忘push到github上了。</p>
-<h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>前两天博主刚刚编写过关于 <strong><a href="https://notes.wanghao.work/2015-06-29-Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8.html" target="_blank" rel="noopener">Hexo添加文章时自动打开编辑器</a></strong> 的相关文章，其原理就是利用<code>NodeJS</code>的事件监听机制实现监听Hexo的<code>new</code>事件来启动编辑器，完成自动启动编辑器的操作。</p>
-<p>那么可不可以通过通过监听Hexo的其它事件来完成自动执行Git命令完成自动备份呢？通过查阅<a href="https://hexo.io/zh-cn/api/events.html" target="_blank" rel="noopener">Hexo文档</a>，找到了Hexo的主要事件，见下表：</p>
-<table>
-<thead>
-<tr>
-<th>事件名</th>
-<th>事件发生时间</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>deployBefore</td>
-<td>在部署完成前发布</td>
-</tr>
-<tr>
-<td>deployAfter</td>
-<td>在部署成功后发布</td>
-</tr>
-<tr>
-<td>exit</td>
-<td>在 Hexo 结束前发布</td>
-</tr>
-<tr>
-<td>generateBefore</td>
-<td>在静态文件生成前发布</td>
-</tr>
-<tr>
-<td>generateAfter</td>
-<td>在静态文件生成后发布</td>
-</tr>
-<tr>
-<td>new</td>
-<td>在文章文件建立后发布</td>
-</tr>
-</tbody>
-</table>
-<p>于是我们就可以通过监听Hexo的<code>deployAfter</code>事件，待上传完成之后自动运行Git备份命令，从而达到自动备份的目的。</p>
-<h3 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h3><h4 id="将Hexo目录加入Git仓库"><a href="#将Hexo目录加入Git仓库" class="headerlink" title="将Hexo目录加入Git仓库"></a>将Hexo目录加入Git仓库</h4><p>本脚本需要<code>提前</code>将Hexo加入Git仓库并与Github或者Gitcafe远程仓库绑定之后，才能正常工作。如果你不知道怎么操作，请参考这篇博文：</p>
-<ul>
-<li><strong><a href="https://notes.wanghao.work/2015-04-06-%E5%A4%87%E4%BB%BDHexo%E5%8D%9A%E5%AE%A2%E6%BA%90%E6%96%87%E4%BB%B6.html" target="_blank" rel="noopener">备份Hexo博客源文件</a></strong></li>
-</ul>
-<h4 id="安装shelljs模块"><a href="#安装shelljs模块" class="headerlink" title="安装shelljs模块"></a>安装<code>shelljs</code>模块</h4><p>要实现这个自动备份功能，需要依赖NodeJs的一个<code>shelljs</code>模块,该模块重新包装了<code>child_process</code>,调用系统命令更加的方便。（其实就是因为博主懒( ╯▽╰)）该模块需要安装后使用。</p>
-<p>在命令中键入以下命令，完成<code>shelljs</code>模块的安装：<br><code>npm install --save shelljs</code></p>
-<h4 id="编写自动备份脚本"><a href="#编写自动备份脚本" class="headerlink" title="编写自动备份脚本"></a>编写自动备份脚本</h4><p>待到模块安装完成，在<code>Hexo</code>根目录的<code>scripts</code>文件夹下新建一个js文件，文件名随意取。</p>
-<p><strong>如果没有<code>scripts</code>目录，请新建一个。</strong></p>
-<p>然后在脚本中，写入以下内容：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">require</span>(<span class="string">'shelljs/global'</span>);</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line"></span><br><span class="line">	hexo.on(<span class="string">'deployAfter'</span>, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;<span class="comment">//当deploy完成后执行备份</span></span><br><span class="line"></span><br><span class="line">		run();</span><br><span class="line"></span><br><span class="line">	&#125;);</span><br><span class="line"></span><br><span class="line">&#125; <span class="keyword">catch</span> (e) &#123;</span><br><span class="line"></span><br><span class="line">	<span class="built_in">console</span>.log(<span class="string">"产生了一个错误&lt;(￣3￣)&gt; !，错误详情为："</span> + e.toString());</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">run</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line"></span><br><span class="line">	<span class="keyword">if</span> (!which(<span class="string">'git'</span>)) &#123;</span><br><span class="line"></span><br><span class="line">		echo(<span class="string">'Sorry, this script requires git'</span>);</span><br><span class="line"></span><br><span class="line">		exit(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">	&#125; <span class="keyword">else</span> &#123;</span><br><span class="line"></span><br><span class="line">		echo(<span class="string">"======================Auto Backup Begin==========================="</span>);</span><br><span class="line"></span><br><span class="line">		cd(<span class="string">'D:/hexo'</span>);    <span class="comment">//此处修改为Hexo根目录路径</span></span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (exec(<span class="string">'git add --all'</span>).code !== <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">			echo(<span class="string">'Error: Git add failed'</span>);</span><br><span class="line"></span><br><span class="line">			exit(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (exec(<span class="string">'git commit -am "Form auto backup script\'s commit"'</span>).code !== <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">			echo(<span class="string">'Error: Git commit failed'</span>);</span><br><span class="line"></span><br><span class="line">			exit(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		<span class="keyword">if</span> (exec(<span class="string">'git push origin master'</span>).code !== <span class="number">0</span>) &#123;</span><br><span class="line"></span><br><span class="line">			echo(<span class="string">'Error: Git push failed'</span>);</span><br><span class="line"></span><br><span class="line">			exit(<span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">		&#125;</span><br><span class="line"></span><br><span class="line">		echo(<span class="string">"==================Auto Backup Complete============================"</span>)</span><br><span class="line"></span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p><strong>其中，需要修改第<code>17</code>行的<code>D:/hexo</code>路径为Hexo的根目录路径。（脚本中的路径为博主的Hexo路径）</strong></p>
-</li>
-<li><p><strong>如果你的Git远程仓库名称不为<code>origin</code>的话，还需要修改第<code>28</code>行执行的push命令，修改成自己的远程仓库名和相应的分支名。</strong></p>
-</li>
-</ul>
-<p>保存脚本并退出，然后执行<code>hexo deploy</code>命令，将会得到类似以下结果:</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">INFO  Deploying: git&gt;</span><br><span class="line"></span><br><span class="line">INFO  Clearing .deploy folder...</span><br><span class="line"></span><br><span class="line">INFO  Copying files <span class="keyword">from</span> public folder...</span><br><span class="line"></span><br><span class="line">[master <span class="number">3020788</span>] Site updated: <span class="number">2015</span><span class="number">-07</span><span class="number">-06</span> <span class="number">15</span>:<span class="number">08</span>:<span class="number">06</span></span><br><span class="line"></span><br><span class="line"> <span class="number">5</span> files changed, <span class="number">160</span> insertions(+), <span class="number">58</span> deletions(-)</span><br><span class="line"></span><br><span class="line">Branch master set up to track remote branch gh-pages <span class="keyword">from</span> git@github.com:smilexi</span><br><span class="line"></span><br><span class="line">amo/notes.git.</span><br><span class="line"></span><br><span class="line">To git@github.com:smilexiamo/notes.git</span><br><span class="line"></span><br><span class="line">   <span class="number">02</span>adbe4.<span class="number">.3020788</span>  master -&gt; gh-pages</span><br><span class="line"></span><br><span class="line">On branch master</span><br><span class="line"></span><br><span class="line">nothing to commit, working directory clean</span><br><span class="line"></span><br><span class="line">Branch master set up to track remote branch gitcafe-pages <span class="keyword">from</span> git@gitcafe.com:s</span><br><span class="line"></span><br><span class="line">milexiamo/smilexiamo.git.</span><br><span class="line"></span><br><span class="line">To git@gitcafe.com:smilexiamo/smilexiamo.git</span><br><span class="line"></span><br><span class="line">   <span class="number">02</span>adbe4.<span class="number">.3020788</span>  master -&gt; gitcafe-pages</span><br><span class="line"></span><br><span class="line">INFO  Deploy done: git</span><br><span class="line"></span><br><span class="line">======================Auto Backup Begin===========================</span><br><span class="line"></span><br><span class="line">[master f044360] Form auto backup script<span class="string">'s commit</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"> 2 files changed, 35 insertions(+), 2 deletions(-)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"> rewrite db.json (100%)</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">To git@github.com:smilexiamo/hexo.git</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string"> 8f2b4b4..f044360  master -&gt; master</span></span><br><span class="line"><span class="string"></span></span><br><span class="line"><span class="string">==================Auto Backup Complete============================</span></span><br></pre></td></tr></table></figure>
-<p>这样子，每次更新博文并<code>deploy</code>到服务器上之后，备份就自动启动并完成备份啦~是不是很方便呢？</p>
-<p>Enjoy it！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/22/自动备份Hexo博客源文件/" data-id="cjljpgr1b002b2ounw7lhvs8s" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-备份Hexo博客源文件" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/22/备份Hexo博客源文件/" class="article-date">
-  <time datetime="2017-10-22T01:33:36.000Z" itemprop="datePublished">2017-10-22</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/22/备份Hexo博客源文件/">备份Hexo博客源文件</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><a href="https://notes.wanghao.work/2015-04-06-%25E5%25A4%2587%25E4%25BB%25BDHexo%25E5%258D%259A%25E5%25AE%25A2%25E6%25BA%2590%25E6%2596%2587%25E4%25BB%25B6.html" target="_blank" rel="noopener">原文链接</a></p>
-<hr>
-<h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>使用Hexo编写博客还是比较Nice的。但是有一个问题就是:Hexo博客的源文件都是放在本地的，如果更换了电脑需要更新博客或者不小心博客源文件丢失，那将是一件非常糟心的事情了。未雨绸缪，现在给出这个问题的一种解决办法吧。</p>
-<h3 id="备份方案"><a href="#备份方案" class="headerlink" title="备份方案"></a>备份方案</h3><p>想到的解决办法无非是:</p>
-<ul>
-<li>将博客源文件拷贝到U盘里。</li>
-</ul>
-<p>但是这样做的话，同步又比较麻烦。</p>
-<ul>
-<li>使用网盘的话，据说.git文件不能上传同步。</li>
-</ul>
-<p>而且我对国内的网盘也不怎么放心。。</p>
-<p>综合起来，我觉得比较可行的方法就是：</p>
-<ul>
-<li>将博客文件托管到Github。</li>
-</ul>
-<h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法:"></a>实现方法:</h3><ul>
-<li><p>在<a href="http://github.com" target="_blank" rel="noopener">Github</a>下创建一个新的repository，取名为<code>HEXO</code>。(与本地的Hexo源码文件夹同名即可)</p>
-<ul>
-<li>进入本地的<code>Hexo</code>文件夹，执行以下命令创建仓库<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>设置远程仓库地址，并更新:</p>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git remote add origin git@github.com:smilexiamo/hexo.git</span><br><span class="line"></span><br><span class="line">git pull origin master</span><br></pre></td></tr></table></figure>
-<ul>
-<li>修改<code>.gitignore</code>文件（如果没有请手动创建一个），在里面加入<code>*.log</code> 和 <code>public/</code> 以及<code>.deploy*/</code>。因为每次执行<code>hexo generate</code>命令时，上述目录都会被重写更新。因此忽略这两个目录下的文件更新，加快push速度。<ul>
-<li>执行命令以下命令，完成Hexo源码在本地的提交。</li>
-</ul>
-</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git add .</span><br><span class="line"></span><br><span class="line">git commit -m &quot;添加hexo源码文件作为备份&quot;</span><br></pre></td></tr></table></figure>
-<ul>
-<li>执行以下命令，将本地的仓库文件推送到Github。</li>
-</ul>
-<p><code>git push origin master</code></p>
-<ul>
-<li><p>现在在任何一台电脑上，只需要<code>git clone git@github.com:smilexiamo/hexo.git</code>,即可完成将Hexo源文件复制到本地。（请将后面的<a href="mailto:`git@github.com" target="_blank" rel="noopener">`git@github.com</a>:smilexiamo/hexo.git`替换为自己相应的仓库地址。否则，克隆的将是博主的博客源码:)）</p>
-<ul>
-<li><p>在本地编写完博客时，顺次执行以下命令，即可完成Hexo博客源文件的更新同步，保持Github上的hexo源码为最新版本。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m &quot;更新hexo源文件&quot;</span><br><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-</li>
-<li><p>当远程仓库有更新时，执行以下命令，即可同步hexo源文件到本地。</p>
-</li>
-</ul>
-<p><code>git pull origin master</code></p>
-<ul>
-<li>至此，Hexo源代码文件就完成了同步和更新了。</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/22/备份Hexo博客源文件/" data-id="cjljpgr0v001m2oun34papqrj" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-如何正确学习JavaScript" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/18/如何正确学习JavaScript/" class="article-date">
-  <time datetime="2017-10-18T11:48:00.000Z" itemprop="datePublished">2017-10-18</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming;</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/18/如何正确学习JavaScript/">如何正确学习JavaScript</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="【转】如何正确学习-JavaScript"><a href="#【转】如何正确学习-JavaScript" class="headerlink" title="【转】如何正确学习 JavaScript"></a>【转】如何正确学习 JavaScript</h1><p><a href="https://blog.crimx.com/2014/05/15/how-to-learn-javascript-properly/" target="_blank" rel="noopener">原文链接</a></p>
-<blockquote>
-<p>“No one saves us but ourselves. No one can and no one may. We ourselves must walk the path.   -Buddha”</p>
-</blockquote>
-<p>正确学习 JavaScript（写给非 JavaScript 程序员和编程新手）</p>
-<p>原文：<a href="http://JavaScriptissexy.com/how-to-learn-JavaScript-properly/" target="_blank" rel="noopener">How to Learn JavaScript Properly</a>（2014-2-7）</p>
-<p>学习时长：6～8周<br>学习前提：中学水平，无需编程经验</p>
-<h2 id="更新（2014-1-7）"><a href="#更新（2014-1-7）" class="headerlink" title="更新（2014-1-7）"></a>更新（2014-1-7）</h2><blockquote>
-<p>在 Reddit 上创建了一个学习小组<br><a href="http://www.reddit.com/r/learn_js_in_seattle/comments/1tziaa/new_study_group_starting_january_2014/" target="_blank" rel="noopener">January 2014， “Learn JavaScript” Study Group on Reddit</a></p>
-</blockquote>
-<h2 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h2><blockquote>
-<ul>
-<li><a href="#不要这样学习JavaScript">不要这样学习JavaScript</a></li>
-<li><a href="#本课程资源">本课程资源</a></li>
-<li><a href="#第1-2周（简介，数据类型，表达式和操作符）">第1-2周（简介，数据类型，表达式和操作符）</a></li>
-<li><a href="#第3-4周（对象，数组，函数，DOM，jQuery）">第3-4周（对象，数组，函数，DOM，jQuery）</a></li>
-<li><a href="#JavaScript终极编辑器：WebStorm">JavaScript终极编辑器：WebStorm</a></li>
-<li><a href="#第一个项目-动态问答应用">第一个项目-动态问答应用</a></li>
-<li><a href="#第5-6周（正则表达式，Window对象，事件，jQuery）">第5-6周（正则表达式，Window对象，事件，jQuery）</a></li>
-<li><a href="#第7周，可延长到8周（类，继承，HTML5）">第7周，可延长到8周（类，继承，HTML5）</a></li>
-<li><a href="#继续提升">继续提升</a></li>
-<li><a href="#一些鼓励的话">一些鼓励的话</a></li>
-</ul>
-</blockquote>
-<p>上面的课程大纲提供了一个结构化和富有启发性的学习线路，从初学者到有所建树，把JavaScript学对学透。</p>
-<p>既然你找到这篇文章来，说明你是真心想学好JavaScript的。你没有想错，当今如果要开发现代网站或web应用（包括互联网创业），都要学会JavaScript。而面对泛滥的JavaScript在线学习资源，却是很难找到一份高效而实用的方法去学习这个“web时代的语言”。</p>
-<p>有一点需要注意，几年前我们需要知道一个真正的服务器端语言（比如PHP，Rails，Java，Python 或者 Perl）去开发可扩展，动态的，数据库驱动的web应用，而现在只用JavaScript就可以实现了。</p>
-<h2 id="不要这样学习JavaScript"><a href="#不要这样学习JavaScript" class="headerlink" title="不要这样学习JavaScript"></a>不要这样学习JavaScript</h2><p>不要一开始就埋头在成堆的JavaScript在线教程里 ，这是最糟糕的学习方法。或许在看过无数个教程后会有点成效，但这样不分层次结构地学习一个东西实在是十分低效，在实际用JavaScript建立网站或web应用时你还是会频繁的卡住。总的来说，这种学习方法会让人不知道如何将语言当做工具来使用——当做个人工具来用。</p>
-<p>另外，也许有人会建议从尊敬的JavaScript教父Douglas Crockford写的《JavaScript语言精粹》开始学习JavaScript。然而，虽然Crockford先生对JavaScript无所不知，被誉为JavaScript世界的爱因斯坦，但他的《JavaScript语言精粹》并不适合初学者学习。这本书没有通透、清晰、明了的阐述JavaScript的核心概念。但对于更高级的学习路线，我倒会建议你看看Crockford先生的视频。</p>
-<p>还有，不要只从Codecademy等网站学习JavaScript，因为即使知道怎么编写一大堆JavaScript代码小片段，还是不能学会怎么建立一个web应用程序。即便如此，在后面我还是会建议把Codecademy当做补充的学习资源。</p>
-<h2 id="本课程资源"><a href="#本课程资源" class="headerlink" title="本课程资源"></a>本课程资源</h2><p>更新：Reddit用户<code>d0gsbody</code>4月8号在Reddit上建立了一个学习小组。他和其他组员都非常积极和乐于助人。我建议你加入这个小组，他们会让你保持积极性且帮助你更好的学习JavaScript。毕竟独自折腾JavaScript还是有点难度的。链接：<a href="http://www.reddit.com/r/learnjavascript/comments/1ceefw/learn_javascript_properly_omnibus_post/" target="_blank" rel="noopener">Learning JS Properly – Study Group on Reddit</a></p>
-<ul>
-<li><p>请在以下两本书中选一本，第一本比较适合有编程经验的人，而另一本则适合完全没有编程经验的初学者。</p>
-<p>我个人推荐第一本书，因为作者对各个知识点都阐述得非常好且涵盖了一些高级JavaScript知识点。但是，要看懂这本书你至少要对web开发有一定的基本了解。所以，如果你有一点点编程经验或者web开发经验（不一定是JavaScript），那就买这本书吧。</p>
-<ul>
-<li>纸质版（英文） ：<a href="http://www.amazon.com/gp/product/1118026691/" target="_blank" rel="noopener">Professional JavaScript for Web Developers</a></li>
-<li>纸质版（中文） ：<a href="http://www.amazon.cn/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E6%B3%BD%E5%8D%A1%E6%96%AF/dp/B007OQQVMY/" target="_blank" rel="noopener">JavaScript高级程序设计(第3版)</a></li>
-<li>Kindle版（英文）：<a href="http://www.amazon.com/gp/product/B006PW2URI/" target="_blank" rel="noopener">Professional JavaScript for Web Developers</a></li>
-<li>Kindle版（中文）：<a href="http://www.amazon.cn/JavaScript%E9%AB%98%E7%BA%A7%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-%E6%B3%BD%E5%8D%A1%E6%96%AF/dp/B00CBBJS5Y/" target="_blank" rel="noopener">JavaScript高级程序设计(第3版)</a></li>
-</ul>
-<p>如果你没有编程经验，可以买这本：</p>
-<ul>
-<li>纸质版（英文） ：<a href="http://www.amazon.com/gp/product/0596805527/" target="_blank" rel="noopener">JavaScript: The Definitive Guide</a></li>
-<li>纸质版（中文） ：<a href="http://www.amazon.cn/O-Reilly%E7%B2%BE%E5%93%81%E5%9B%BE%E4%B9%A6%E7%B3%BB%E5%88%97-JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-%E5%BC%97%E5%85%B0%E7%BA%B3%E6%A0%B9/dp/B007VISQ1Y/" target="_blank" rel="noopener">JavaScript权威指南(第6版)</a></li>
-<li>Kindle版（英文）：<a href="http://www.amazon.com/gp/product/B004XQX4K0/" target="_blank" rel="noopener">JavaScript: The Definitive Guide</a></li>
-<li>Kindle版（中文）：<a href="http://www.amazon.cn/JavaScript%E6%9D%83%E5%A8%81%E6%8C%87%E5%8D%97-David-Flanagan/dp/B00E593MTS/" target="_blank" rel="noopener">JavaScript权威指南（原书第6版）</a></li>
-</ul>
-</li>
-<li><p>免费注册<a href="http://stackoverflow.com/" target="_blank" rel="noopener">Stack Overflow</a>，这是一个编程领域的问答论坛。在这里提问题得到的回答比Codecademy要好，哪怕你的问题非常基础，看起来很傻（记住，从来没有愚蠢的问题）。</p>
-</li>
-<li><p>免费注册<a href="http://www.codecademy.com/" target="_blank" rel="noopener">Codecademy</a>，这是一个在线学习平台，你可以直接在浏览器里面写代码。</p>
-</li>
-<li><p><a href="http://javascriptissexy.com/" target="_blank" rel="noopener">JavaScriptIsSexy</a>上的一些博文，包括对象，闭包，变量的作用域和提升，函数等等。</p>
-</li>
-</ul>
-<h2 id="JavaSctipt学习路线"><a href="#JavaSctipt学习路线" class="headerlink" title="JavaSctipt学习路线"></a>JavaSctipt学习路线</h2><p>完成整个课程大纲需要花上6~8周的时间，将学会完整的JavaScript语言（包括jQuery和一些HTML5）。如果你没有时间在6个星期里完成所有的课程（确实比较有挑战性），尽量不要超过8个星期。花的时间越长，掌握和记忆各种知识点的难度就越大。</p>
-<h2 id="第1-2周（简介，数据类型，表达式和操作符）"><a href="#第1-2周（简介，数据类型，表达式和操作符）" class="headerlink" title="第1-2周（简介，数据类型，表达式和操作符）"></a>第1-2周（简介，数据类型，表达式和操作符）</h2><ol>
-<li><p>如果你还不是很了解HTML和CSS，完成Codecademy上的<a href="http://www.codecademy.com/tracks/web" target="_blank" rel="noopener">web基础</a>任务。</p>
-</li>
-<li><p>阅读《JavaScript权威指南》或者《JavaScript高级程序设计》的前言和第1~2章。</p>
-</li>
-<li><p><strong>十分重要：</strong>在书中遇到的每个样例代码都要动手敲出来并且在火狐或Chrome浏览器控制台中跑起来、尽量蹂躏它（做各种试验）。也可以用<a href="http://jsfiddle.net/" target="_blank" rel="noopener">jsfiddle</a>，但不要用Safari浏览器。我建议用火狐搭配<a href="https://addons.mozilla.org/en-us/firefox/addon/firebug/" target="_blank" rel="noopener">Firebug插件</a>去测试和调试代码。浏览器控制台就是可以让你编写和运行JavaScript代码的地方。</p>
-</li>
-<li><p>完成Codecademy <a href="http://www.codecademy.com/tracks/javascript" target="_blank" rel="noopener">JavaScript Track</a>上的<code>Introduction to JavaScript</code>部分。</p>
-</li>
-<li><p>阅读《JavaScript权威指南》第3~4章。</p>
-<p>或者阅读《JavaScript高级程序设计》第3~4章。你可以跳过<code>位操作</code>部分，在你的JavaScript生涯中一般不会用上这个。</p>
-<p>再次说明，记得要不时停下来把书本的代码敲到浏览器控制台里（或者JSFiddle）做各种测试，可以改变几个变量或者把代码结构修改一番。</p>
-</li>
-<li><p>阅读《JavaScript权威指南》第5章。至于《JavaScript高级程序设计》则暂时没有阅读任务，因为前面已经把相关知识覆盖了。</p>
-</li>
-<li><p>完成Codecademy <a href="http://www.codecademy.com/tracks/javascript" target="_blank" rel="noopener">JavaScript Track</a>上的2~5部分。</p>
-</li>
-</ol>
-<h2 id="第3-4周（对象，数组，函数，DOM，jQuery）"><a href="#第3-4周（对象，数组，函数，DOM，jQuery）" class="headerlink" title="第3-4周（对象，数组，函数，DOM，jQuery）"></a>第3-4周（对象，数组，函数，DOM，jQuery）</h2><ol>
-<li><p>以下三选一：</p>
-<ul>
-<li><p>阅读我的博文<a href="http://javascriptissexy.com/javascript-objects-in-detail/" target="_blank" rel="noopener">JavaScript 对象详解</a>.</p>
-</li>
-<li><p>阅读《JavaScript权威指南》第6章。</p>
-</li>
-<li><p>阅读《JavaScript高级程序设计》第6章。注意：只需要看“理解对象”（Understanding Objects）部分。</p>
-</li>
-</ul>
-<p>两本书会涉及更多的一些细节，但只要看完我的博文，你可以完全放心地跳过这些细节。</p>
-</li>
-<li><p>阅读《JavaScript权威指南》第7~8章或者《JavaScript高级程序设计》第5和7章。</p>
-</li>
-<li><p>此时，你应该花大量时间在浏览器控制台上写代码，测试if-else语句，for循环，数组，函数，对象等等。更重要的是，你要锻炼和掌握独立写代码，不用借助Codecademy。在Codecademy上做题时，每个任务对你来说应该都很简单，不需要点帮助和提示。</p>
-<p>如果你还卡在Codecademy上，继续回到浏览器上练习，这是最好的学习方法。就像詹姆斯年轻时在邻居的篮球场上练球，比尔盖茨在地下室里学习编程。</p>
-<p>持续地练习，这一点点的进步积累起来效果会非常惊人。你要看到这个策略的价值，相信它是可行的，全心投入进去。</p>
-<p><strong>Codecademy会造成已掌握的错觉。</strong><br>使用Codecademy最大的问题是，它的提示和代码小片段会让人很容易就把答案做出来，造成一种已经掌握这个知识点的错觉。你可能一时看不出来，但这样做你的代码就不是独立完成的了。</p>
-<p>但目前为止，Codecademy依然是学习编程的好帮手。特别是从一些基本的代码结构如if语句，for循环，函数和变量去指导你了解小项目和小应用的开发过程。</p>
-</li>
-<li><p>回到Codecademy完成JavaScript路线。做完6~8部分（数据结构做到Object 2）。</p>
-</li>
-<li><p>实现Codecademy上<a href="http://www.codecademy.com/tracks/projects" target="_blank" rel="noopener">Projects</a>路线的5个基础小项目（Basic Projects）。做完之后，你已不再需要Codecademy了。这是一件好事，因为自己做的越多，学得就越快，就能更好准备开始独立编程。</p>
-</li>
-<li><p>阅读《JavaScript权威指南》第13，15，16和19章。</p>
-<p>或者阅读《JavaScript高级程序设计》第8，9，10，11，13和14章。这本书没有涉及到jQuery，而Codecademy上的jQuery知识也覆盖得不够。可以看看jQuery的官方教程，免费的：<a href="http://try.jquery.com/" target="_blank" rel="noopener">http://try.jquery.com/</a></p>
-<p>你也可以在《JavaScript权威指南》第19章了解更多的jQuery知识。</p>
-</li>
-<li><p>完成全部的jQuery教程<a href="http://try.jquery.com/" target="_blank" rel="noopener">http://try.jquery.com/</a>。</p>
-</li>
-</ol>
-<h2 id="JavaScript终极编辑器：WebStorm"><a href="#JavaScript终极编辑器：WebStorm" class="headerlink" title="JavaScript终极编辑器：WebStorm"></a>JavaScript终极编辑器：WebStorm</h2><ul>
-<li><p>在你实现第一个项目之前，如果打算以后做JavaScript开发者或者经常用到JavaScript，最好现在就去下载<a href="http://www.jetbrains.com/webstorm/" target="_blank" rel="noopener">WebStorm</a>的试用版。<a href="http://2oahu.com/blog/webstorm-javascript/" target="_blank" rel="noopener">这里</a>可以学习怎么使用WebStorm（专门为这个课程写的）。</p>
-<p>毋庸置疑，WebStorm是JavaScript编程最好的编辑器（或IDE）。30天试用后要付$49.00，但作为JavaScript开发者，这应该是除了买书以外最明智的投资了。</p>
-</li>
-<li><p>确保在WebStorm中启用JSHint。JSHint是一个检查JavaScript代码错误和潜在问题的工具，强制你的团队按照规范写代码。用WebStorm最爽的地方是JSHint会自动在错误的代码下显示红线，就像文字处理程序中的拼写检查。JSHint会显示一切的代码错误（包括HTML），促使你养成良好的习惯，成为更好的JavaScript程序员。<strong>这很重要</strong>，当你真正意识到WebStrom和JSHint对你的巨大帮助时，你会回来感谢我的。</p>
-</li>
-<li><p>此外，WebStorm是一个世界级，专业人员使用的IDE，用来编写专业的JavaScript web应用，所以你以后会经常用到它。它还结合了Node.js，Git和其它JavaScript框架，所以即使你成为了明星级的JavaScript开发者，你还是会用到它的。除非以后出现了更多的JavaScript IDE。</p>
-</li>
-<li><p>公平起见，我在这里提一下<a href="http://www.sublimetext.com/2" target="_blank" rel="noopener">Sublime Text 2</a>，这是仅次于WebStorm的JavaScript编辑器。它的功能不及WebStorm丰富和完整（即使添加了一堆插件）。做小修改的时候我会用到Sublime Text 2，它支持很多语言，包括JavaScript，但我不会用它来构建完整的JavaScript Web应用。</p>
-</li>
-</ul>
-<h2 id="第一个项目-动态问答应用"><a href="#第一个项目-动态问答应用" class="headerlink" title="第一个项目-动态问答应用"></a>第一个项目-动态问答应用</h2><p>此时，你已经掌握了足够的知识去建立一个稳固的，可维护的web应用。在做完我为你设计的这个应用之前不要看后面的章节。如果你卡住了，去Stack Overflow提问并且把书上相关的内容重新看一遍直到完全理解这些概念。</p>
-<p>接下来开始建立一个JavaScript问答应用（还会用到HTML和CSS），功能如下：</p>
-<ul>
-<li><p>这是一套单选测试题，完成之后会显示用户的成绩。</p>
-</li>
-<li><p>问答应用可以产生任意多的问题，每个问题可以有任意多的选项。</p>
-</li>
-<li><p>在最后的页面显示用户的成绩。这个页面只显示成绩，所以要把最后一个问题去掉。</p>
-</li>
-<li><p>用数组存所有的问题。每个问题包括它的选项和正确答案，都封装成一个对象。问题数组看起来应该是这样：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 这里只演示一个问题，你要把所有问题都添加进去</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> allQuestions = [</span><br><span class="line"></span><br><span class="line">    &#123;</span><br><span class="line"></span><br><span class="line">        question: <span class="string">"Who is Prime Minister of the United Kingdom?"</span>,</span><br><span class="line"></span><br><span class="line">        choices: [</span><br><span class="line">           <span class="string">"David Cameron"</span>,</span><br><span class="line">           <span class="string">"Gordon Brown"</span>,</span><br><span class="line">           <span class="string">"Winston Churchill"</span>,</span><br><span class="line">           <span class="string">"Tony Blair"</span>],</span><br><span class="line">        correctAnswer: <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">];</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>当用户点击“Next”时，使用<code>document.getElementById</code>或jQuery动态的添加下一个问题，并且移去当前问题。在这个版本里“Next”是唯一的导航按钮。</p>
-</li>
-<li><p>你可以在本文下方评论求助，最好是去Stack Overflow提问，在那里会有及时而准确的回答。</p>
-</li>
-</ul>
-<h2 id="第5-6周（正则表达式，Window对象，事件，jQuery）"><a href="#第5-6周（正则表达式，Window对象，事件，jQuery）" class="headerlink" title="第5-6周（正则表达式，Window对象，事件，jQuery）"></a>第5-6周（正则表达式，Window对象，事件，jQuery）</h2><ol>
-<li><p>阅读《JavaScript权威指南》第10，14，17，20章。</p>
-<p>或者阅读《JavaScript高级程序设计》第20，23章。</p>
-</li>
-<li><p>记得要把样例代码敲到浏览器控制台上，尽可能蹂躏它，做各种测试，直到完全理解它是怎么工作，它能干些什么。</p>
-</li>
-<li><p>此时，你用起JavaScript来应该很顺手，有点像武林高手要出山了。但你还不能成为高手，你要把新学到的知识反复使用，不停的学习和提升。</p>
-</li>
-<li><p>升级之前做的问答应用</p>
-<ul>
-<li><p>添加客户端数据验证：保证用户回答了当前问题才能进入下个问题。</p>
-</li>
-<li><p>添加“Back”按钮，允许用户返回修改答案。最多可以返回到第一个问题。注意对于用户回答过的问题，选择按钮要显示被选中。这样用户就无需重新回答已经答过的问题。</p>
-</li>
-<li><p>用jQuery添加动画（淡出当前问题，淡入下个问题）</p>
-</li>
-<li><p>在IE8和IE9下测试，修改bug，这里应该会有得你忙了。 ;D</p>
-</li>
-<li><p>把问题导出JSON文件</p>
-</li>
-<li><p>添加用户认证，允许用户登陆，把用户认证信息保存在<code>本地存储</code>（local storage，HTML5浏览器存储）。</p>
-</li>
-<li><p>使用cookies记住用户，当用户再次登陆时显示“欢迎<code>用户名</code>回来”。</p>
-</li>
-</ul>
-</li>
-</ol>
-<h2 id="第7周，可延长到8周（类，继承，HTML5）"><a href="#第7周，可延长到8周（类，继承，HTML5）" class="headerlink" title="第7周，可延长到8周（类，继承，HTML5）"></a>第7周，可延长到8周（类，继承，HTML5）</h2><ol>
-<li><p>阅读《JavaScript权威指南》第9，18，21，22章。</p>
-<p>或者阅读我的博文<a href="http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/" target="_blank" rel="noopener">JavaScript面向对象必知必会</a></p>
-<p>或者阅读《JavaScript高级程序设计》第6，16，22，24章，第6章只读“创建对象”（Object Creation）和“继承”（Inheritance）部分。注意：这部分是本课程中技术性强度最大的阅读，要根据自身的状况考虑要不要全部读完。你至少要知道原型模式（Prototype Pattern），工厂模式（Factory Pattern）和原型继承（Prototypal Inheritance），其它的不作要求。</p>
-</li>
-<li><p><strong>继续升级你的问答应用：</strong></p>
-<ul>
-<li><p>页面布局使用<a href="http://twitter.github.com/bootstrap/" target="_blank" rel="noopener">Twitter Bootstrap</a>，把问答的元素弄得看起来专业一些。而作为额外奖励，用Twitter Bootstrap的<a href="http://getbootstrap.com/2.3.2/components.html#navs" target="_blank" rel="noopener">标签控件</a>（译者注：原文地址失效，已改）显示问题，每个标签显示一个问题。</p>
-</li>
-<li><p>学习<a href="http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/" target="_blank" rel="noopener">Handlebars.js</a>，将Handlebars.js模板用在问答应用上。你的JavaScript代码中不应该再出现HTML代码了。我们的问答应用现在越来越高级啦。</p>
-</li>
-<li><p>记录参加问答的用户成绩，展示用户在问答应用中与其他用户的排名比较。</p>
-</li>
-</ul>
-</li>
-<li><p>在学完Backbone.js和Node.js后，你会用这两种最新的JavaScript框架重构问答应用的代码，使之变成复杂的单页面现代web应用。你还要把用户的认证信息和成绩保存在MongoDB数据库上。</p>
-</li>
-<li><p>接下来：构思一个项目，趁热打铁迅速的去开发。卡住的时候参考《JavaScript权威指南》或者《JavaScript高级程序设计》。当然，还要成为Stack Overflow的活跃用户，多问问题，也要尽量回答其它人的提问。</p>
-</li>
-</ol>
-<h2 id="继续提升"><a href="#继续提升" class="headerlink" title="继续提升"></a>继续提升</h2><ol>
-<li><p><a href="http://javascriptissexy.com/learn-backbone-js-completely/" target="_blank" rel="noopener">精通backbone.js</a></p>
-</li>
-<li><p><a href="http://javascriptissexy.com/learn-intermediate-and-advanced-javascript/" target="_blank" rel="noopener">中高级JavaScript进阶</a></p>
-</li>
-<li><p><a href="https://blog.crimx.com/2014/05/22/learn-node-js-completely-and-with-confidence" target="_blank" rel="noopener">不侧漏精通Node.js</a></p>
-</li>
-<li><p>Meteor.js入门（即将出炉）</p>
-</li>
-<li><p>三个最好的JavaScript前端框架（即将出炉）</p>
-</li>
-</ol>
-<h2 id="一些鼓励的话"><a href="#一些鼓励的话" class="headerlink" title="一些鼓励的话"></a>一些鼓励的话</h2><p>祝你学习顺利，永不放弃！当你做不下去觉得自己很蠢的时候（你会时不时这么想的），请记住，世界各地的其他初学者，甚至是有经验的程序员，也会不时产生这种想法的。</p>
-<p>如果你是完全的初学者，特别是过了青少年时期的人，开始写代码的时候也许很困难。年轻人无所畏惧，也没有什么负担，他们可以花大量的时间在喜欢的东西上。所以各种挑战对他们来说也不过是短暂的障碍罢了。</p>
-<p>但过了青少年期后你会希望快速的见到成效。因为你没有这么多的时间去花上几个小时就为了搞清楚一些细节的东西。但这些东西你必须深入去理解它，不要因此沮丧，坚持完成课程的任务，把bug都找出来，直到你完全理解。当你到达胜利的彼岸时，你会知道这一切都是值得的，你会发现编程非常有趣而且在上面花的时间都会得到可观的回报。</p>
-<p>一个人必须去感受和领悟构建程序带来的强烈快感。当你一步步的掌握知识点，一点点的将程序搭建起来时，就会对自己产生激励与肯定，带来十分美妙的满足感。</p>
-<p>总有一天你会意识到之前忍受的所有困难都是值得的。因为你将要成为一名光荣的程序员，你也清楚作为JavaScript开发者，你的前途一片光明。就像在你之前成千上万的程序员一样，你打败了最难的bug，你没有退步，你没有放手，你没有找任何借口让自己放弃。</p>
-<p>当你学有所成的时候，放心的将你的成果分享给我们吧，哪怕是个微不足道的，小到显微镜都看不到的小项目。 :D</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/18/如何正确学习JavaScript/" data-id="cjljpgr0z001t2ounqjoqvxdk" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Hexo建站笔记" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/15/Hexo建站笔记/" class="article-date">
-  <time datetime="2017-10-15T12:05:36.000Z" itemprop="datePublished">2017-10-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming;</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/15/Hexo建站笔记/">Hexo建站笔记</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="方法一：添加文章结束标记"><a href="#方法一：添加文章结束标记" class="headerlink" title="方法一：添加文章结束标记"></a>方法一：添加文章结束标记</h1><h2 id="最简单的方法"><a href="#最简单的方法" class="headerlink" title="最简单的方法"></a>最简单的方法</h2><p>在<span id="inline-purple">主题配置</span><code>hexo\themes\next\layout\_macro</code>下的<code>post.swig</code>添加下面的代码</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">&#123;#####################&#125;</span><br><span class="line">&#123;### END POST BODY ###&#125;</span><br><span class="line">&#123;#####################&#125;</span><br><span class="line"></span><br><span class="line">&lt;!<span class="selector-tag">--</span> 开始 <span class="selector-tag">-</span> 添加文章结束标记 <span class="selector-tag">--</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">  &#123;% if not is_index %&#125;</span><br><span class="line">  &lt;div style="text-align:center;color: #ccc;font-size:14px;"&gt;---------------- 本文结束 ----------------&lt;/div&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;!<span class="selector-tag">--</span> 结束 <span class="selector-tag">-</span> 添加文章结束标记 <span class="selector-tag">j--</span>&gt;</span><br><span class="line"></span><br><span class="line">&lt;!<span class="selector-tag">--</span> 下面的代码没有改动 <span class="selector-tag">--</span>&gt;</span><br><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">  &#123;% if not is_index %&#125;</span><br><span class="line">  &#123;% include 'passage-end-tag.swig' %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">  &#123;% if theme.wechat_subscriber.enabled and not is_index %&#125;</span><br><span class="line">    &lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">      &#123;% include 'wechat-subscriber.swig' %&#125;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">  &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="方法二：每篇文章末尾统一添加“本文结束”标记"><a href="#方法二：每篇文章末尾统一添加“本文结束”标记" class="headerlink" title="方法二：每篇文章末尾统一添加“本文结束”标记"></a>方法二：每篇文章末尾统一添加“本文结束”标记</h1><h2 id="新建-passage-end-tag-swig-文件"><a href="#新建-passage-end-tag-swig-文件" class="headerlink" title="新建 passage-end-tag.swig 文件"></a>新建 <code>passage-end-tag.swig</code> 文件</h2><p>在路径 <code></code>\themes\next\layout_macr<code>o 中添加</code>passage-end-tag.swig` 文件，其内容为：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">    &#123;% if not is_index %&#125;</span><br><span class="line">        &lt;div style="text-align:center;color: #ccc;font-size:14px;"&gt;------本文结束&lt;i class="fa fa-paw"&gt;&lt;/i&gt;感谢阅读------&lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="修改-post-swig-文件"><a href="#修改-post-swig-文件" class="headerlink" title="修改 post.swig 文件"></a>修改 <code>post.swig</code> 文件</h2><p>在 <code></code>\themes\next\layout_macro\post.swig<code>中，</code>post-body<code>之后，</code>post-footer` 之前添加如下代码（post-footer之前两个DIV）：</p>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span>&gt;</span><br><span class="line">  &#123;% if not is_index %&#125;</span><br><span class="line">    &#123;% include 'passage-end-tag.swig' %&#125;</span><br><span class="line">  &#123;% endif %&#125;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="在主题配置文件中添加字段"><a href="#在主题配置文件中添加字段" class="headerlink" title="在主题配置文件中添加字段"></a>在主题配置文件中添加字段</h2><p>在<span id="inline-purple">主题配置</span>文件 <code>_config.yml</code> 中添加以下字段开启此功能：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 文章末尾添加“本文结束”标记</span><br><span class="line">passage_end_tag:</span><br><span class="line">  enabled: true</span><br></pre></td></tr></table></figure></p>
-<p>完成以上设置之后，在每篇文章之后都会添加“本文结束”标记。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/15/Hexo建站笔记/" data-id="cjljpgr07000n2oune0pw3dk9" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Hexo添加文章时自动打开编辑器" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/15/Hexo添加文章时自动打开编辑器/" class="article-date">
-  <time datetime="2017-10-15T11:52:53.000Z" itemprop="datePublished">2017-10-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/15/Hexo添加文章时自动打开编辑器/">Hexo添加文章时自动打开编辑器</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p><span id="inline-purple">文章更新 2017-10-18</span></p>
-<h2 id="更正Windows下spawn命令，并且在win10下测试通过。"><a href="#更正Windows下spawn命令，并且在win10下测试通过。" class="headerlink" title="更正Windows下spawn命令，并且在win10下测试通过。"></a><p id="div-border-left-red">更正Windows下spawn命令，并且在win10下测试通过。</p></h2><p><a href="https://notes.wanghao.work/2015-06-29-Hexo%E6%B7%BB%E5%8A%A0%E6%96%87%E7%AB%A0%E6%97%B6%E8%87%AA%E5%8A%A8%E6%89%93%E5%BC%80%E7%BC%96%E8%BE%91%E5%99%A8.html" target="_blank" rel="noopener">原文链接</a></p>
-<p>在<code>Hexo</code>中新建一篇博文非常简单，只需要在命令行中键入以下命令然后回车即可：</p>
-<p><code>hexo new &quot;The title of your blog&quot;</code></p>
-<p>此后Hexo便会在Hexo的根目录的<code>source</code>文件夹下的<code>_posts</code>目录下自动帮你创建相应的md文件。然后我们打开该目录，找到刚刚Hexo自动生成的文件打开编辑即可。</p>
-<p>但是当我们的博文比较多，这样我们就需要在成堆的Markdown文件中找到刚才自动生成的文件，这样做显然是一件比较痛苦的事情。</p>
-<p>在访问Hexo的Github项目时，发现有类似的issue，Hexo作者也给出来解决办法，以下为作者原文：</p>
-<blockquote>
-<p>ou can try to listen to the new event. For example:</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> spawn = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line"><span class="comment">// Hexo 2.x</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">path</span>)</span>&#123;</span><br><span class="line">  exec(<span class="string">'vi'</span>, [path]);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// Hexo 3</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  exec(<span class="string">'vi'</span>, [data.path]);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<p>根据作者给出的示例，一番折腾过后博主终于在自己的机器上实验成功了，下面给出操作步骤：</p>
-<ul>
-<li>首先在Hexo目录下的<code>scripts</code>目录中创建一个JavaScript脚本文件。</li>
-<li>如果没有这个<code>scripts</code>目录，则新建一个。</li>
-<li><code>scripts</code>目录新建的JavaScript脚本文件可以任意取名。例如<code>auto open post.js</code></li>
-</ul>
-<p>通过这个脚本，我们用其来监听<code>hexo new</code>这个动作，并在检测到<code>hexo new</code>之后，执行编辑器打开的命令。</p>
-<p>如果你是<strong>windows平台的Hexo用户</strong>，则将下列内容写入你的脚本：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> spawn = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line"><span class="comment">// Hexo 2.x 用户复制这段</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">path</span>)</span>&#123;</span><br><span class="line">  spawn(<span class="string">'start  "markdown编辑器绝对路径.exe" '</span> + path);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// Hexo 3 用户复制这段</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  spawn(<span class="string">'start  "markdown编辑器绝对路径.exe" '</span> + data.path);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<p>如果你是<strong>Mac平台Hexo用户</strong>，则将下列内容写入你的脚本：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> exec = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line"><span class="comment">// Hexo 2.x 用户复制这段</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">path</span>)</span>&#123;</span><br><span class="line">    exec(<span class="string">'open -a "markdown编辑器绝对路径.app" '</span> + path);</span><br><span class="line">&#125;);</span><br><span class="line"><span class="comment">// Hexo 3 用户复制这段</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">    exec(<span class="string">'open -a "markdown编辑器绝对路径.app" '</span> + data.path);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure></p>
-<p><span id="inline-purple">更新细节 2017-10-18</span></p>
-<p><strong>windows平台的Hexo用户</strong></p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> spawn = <span class="built_in">require</span>(<span class="string">'child_process'</span>).exec;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Hexo 3 用户复制这段</span></span><br><span class="line">hexo.on(<span class="string">'new'</span>, <span class="function"><span class="keyword">function</span>(<span class="params">data</span>)</span>&#123;</span><br><span class="line">  spawn(<span class="string">"C:\\Users\\Bob\\AppData\\Local\\atom\\atom.exe "</span> + ]data.path]);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
-<ol>
-<li><code>mkdir -p $USERPROFILE/AppData/Roaming</code><br>解决<code>Failed to get &#39;appData&#39;</code>错误</li>
-</ol>
-<p><img src="http://oxox7elwf.bkt.clouddn.com/201710182158_197.png" alt="Failed to get appData"></p>
-<ol start="2">
-<li><p>Execute <code>hexo new</code><br><img src="http://oxox7elwf.bkt.clouddn.com/201710182147_384.png" alt="hexo new"></p>
-</li>
-<li><p>New post is opened automatically<br><img src="http://oxox7elwf.bkt.clouddn.com/201710182150_445.png" alt=""></p>
-</li>
-</ol>
-<p>保存并退出脚本之后，在命令行中键入：</p>
-<p><code>hexo new &quot;auto open editor test&quot;`</code></p>
-<p>是不是就顺利的自动打开了自动生成的md文件啦~</p>
-<p>Enjoy it！</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/15/Hexo添加文章时自动打开编辑器/" data-id="cjljpgr00000g2oung63enes6" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-解决Hexo-Next主题访问慢" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/15/解决Hexo-Next主题访问慢/" class="article-date">
-  <time datetime="2017-10-15T09:21:59.000Z" itemprop="datePublished">2017-10-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/15/解决Hexo-Next主题访问慢/">解决Hexo NexT主题访问慢</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>最近一段时间<em>博客打开速度很慢</em>（博客使用Hexo搭建在Github Page上），浏览器检查网络信息后发现是因为<code>fonts.googleapis.com</code>加载极慢。Google了一下，发现了解决方案。</p>
-<p>把在NexT主题的<code>_config.yml</code>里面的：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span><br><span class="line">host:</span><br></pre></td></tr></table></figure>
-<p>改为：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span><br><span class="line"># fonts.lug.ustc.edu.cn是中科大的源</span><br><span class="line">host: //fonts.lug.ustc.edu.cn</span><br></pre></td></tr></table></figure>
-<p>:100:</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/15/解决Hexo-Next主题访问慢/" data-id="cjljpgr1d002f2oundhmc0ugu" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-Chrome-错误代码-ERR-UNSAFE-PORT" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/10/15/Chrome-错误代码-ERR-UNSAFE-PORT/" class="article-date">
-  <time datetime="2017-10-15T08:57:11.000Z" itemprop="datePublished">2017-10-15</time>
-</a>
-    
-  <div class="article-category">
-    <a class="article-category-link" href="/categories/programming/">programming;</a>
-  </div>
-
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/10/15/Chrome-错误代码-ERR-UNSAFE-PORT/"> Chrome 错误代码 ERR_UNSAFE_PORT</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>公司运维同事在部署项目的时候，不知道为什么用火狐可以访问，用chrome不能访问。仔细查看了chrome的错误，发现是<code>ERR_UNSAFE_PORT</code>，这个应该不是服务器错误，也不是网络错误，从字面上来看是不安全的端口，于是在网上搜索这个问题才找到问题所在：原来是<code>6666</code>端口的问题。</p>
-<p><span id="inline-yellow">错误代码ERR_UNSAFE_PORT</span></p>
-<p><img src="http://oxox7elwf.bkt.clouddn.com/201710151711_159.png" alt="ERR_UNSAFE_PORT"></p>
-<p>网上常见的说法是：<code>6666-6669</code>这几个端口是IRC协议使用的缺省端口，存在很大的安全风险，很容易被木马程序利用，出于安全方面chrome禁止了对<code>6666</code>端口的访问，同样使用webkit内核的<strong>Chrome</strong>缺省状态下也是禁止访问这几个端口的。</p>
-<p><span id="inline-green">解决办法</span><br>选中<strong>Google Chrome</strong>快捷方式，右键属性，在”目标”对应文本框添加：<br><code>--explicitly-allowed-ports=6000,556</code></p>
-<p>允许多个端口以逗号隔开，最终如下：</p>
-<p><code>&quot;C:\Program Files (x86)\Google\Chrome\Application\chrome.exe&quot; --explicitly-allowed-ports=6000,556</code></p>
-<p>当然也有一些端口是被限制，这里摘抄一下：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">1, // tcpmux</span><br><span class="line">7, // echo</span><br><span class="line">9, // discard</span><br><span class="line">11, // systat</span><br><span class="line">13, // daytime</span><br><span class="line">15, // netstat</span><br><span class="line">17, // qotd</span><br><span class="line">19, // chargen</span><br><span class="line">20, // ftp data</span><br><span class="line">21, // ftp access</span><br><span class="line">22, // ssh</span><br><span class="line">23, // telnet</span><br><span class="line">25, // smtp</span><br><span class="line">37, // time</span><br><span class="line">42, // name</span><br><span class="line">43, // nicname</span><br><span class="line">53, // domain</span><br><span class="line">77, // priv-rjs</span><br><span class="line">79, // finger</span><br><span class="line">87, // ttylink</span><br><span class="line">95, // supdup</span><br><span class="line">101, // hostriame</span><br><span class="line">102, // iso-tsap</span><br><span class="line">103, // gppitnp</span><br><span class="line">104, // acr-nema</span><br><span class="line">109, // pop2</span><br><span class="line">110, // pop3</span><br><span class="line">111, // sunrpc</span><br><span class="line">113, // auth</span><br><span class="line">115, // sftp</span><br><span class="line">117, // uucp-path</span><br><span class="line">119, // nntp</span><br><span class="line">123, // NTP</span><br><span class="line">135, // loc-srv /epmap</span><br><span class="line">139, // netbios</span><br><span class="line">143, // imap2</span><br><span class="line">179, // BGP</span><br><span class="line">389, // ldap</span><br><span class="line">465, // smtp+ssl</span><br><span class="line">512, // print / exec</span><br><span class="line">513, // login</span><br><span class="line">514, // shell</span><br><span class="line">515, // printer</span><br><span class="line">526, // tempo</span><br><span class="line">530, // courier</span><br><span class="line">531, // chat</span><br><span class="line">532, // netnews</span><br><span class="line">540, // uucp</span><br><span class="line">556, // remotefs</span><br><span class="line">563, // nntp+ssl</span><br><span class="line">587, // stmp?</span><br><span class="line">601, // ??</span><br><span class="line">636, // ldap+ssl</span><br><span class="line">993, // ldap+ssl</span><br><span class="line">995, // pop3+ssl</span><br><span class="line">2049, // nfs</span><br><span class="line">3659, // apple-sasl / PasswordServer</span><br><span class="line">4045, // lockd</span><br><span class="line">6000, // X11</span><br><span class="line">6665, // Alternate IRC [Apple addition]</span><br><span class="line">6666, // Alternate IRC [Apple addition]</span><br><span class="line">6667, // Standard IRC [Apple addition]</span><br><span class="line">6668, // Alternate IRC [Apple addition]</span><br><span class="line">6669, // Alternate IRC [Apple addition]</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="anson2416.github.io/2017/10/15/Chrome-错误代码-ERR-UNSAFE-PORT/" data-id="cjljpgqzc00042ounuto5dqj9" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/software/">software</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-  <nav id="page-nav">
-    <a class="extend prev" rel="prev" href="/">&laquo; __('prev')</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/">__('next') &raquo;</a>
-  </nav>
-</section>
-        
-          <aside id="sidebar">
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Categories</h3>
-    <div class="widget">
-      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/life/">life;</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/programming/">programming;</a></li></ul>
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
     </div>
   </div>
+  <div id="local-search-result"></div>
+</div>
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/life/">life;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software/">software;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-JavaScript/">software; JavaScript;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/software-life/">software; life;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test/">test;</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/test-hexo/">test;hexo;</a></li></ul>
+
     </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 12px;">Hexo</a> <a href="/tags/hexo/" style="font-size: 18px;">hexo</a> <a href="/tags/life/" style="font-size: 12px;">life;</a> <a href="/tags/software/" style="font-size: 20px;">software</a> <a href="/tags/software/" style="font-size: 16px;">software;</a> <a href="/tags/software-JavaScript/" style="font-size: 10px;">software; JavaScript;</a> <a href="/tags/software-life/" style="font-size: 14px;">software; life;</a> <a href="/tags/test/" style="font-size: 14px;">test;</a> <a href="/tags/test-hexo/" style="font-size: 10px;">test;hexo;</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/09/">September 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/11/">November 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/09/02/HEXO下的Markdown语法-GFM-写博客/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/02/hello-world/">Hello World</a>
-          </li>
-        
-          <li>
-            <a href="/2018/09/01/懒/">懒3</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/25/我的同事娜姐/">我的同事娜姐</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/04/SpaceVimNeovim使用记录（3）常用操作/">Spacevim/Neovim使用记录（3）：常用操作</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2018 hey<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
   
 </nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+  <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/e482436e/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/e482436e/" itemprop="url">前端学习笔记之观察者模式</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T20:13:32+08:00">
+                2017-10-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T20:15:00+08:00">
+                2017-10-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
     
 
-<script src="/js/jquery.min.js"></script>
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          前端学习笔记之观察者模式
+
+观察者模式也称”发布-订阅”模式,它的作用就是当一个对象的状态发生改变时，所有依赖于它的对象都将得到通知，自动刷新对象状态
+
+举个生活比较常见常见的例子,比如你去面试之后，面试官看你表现不错，最后会跟你要联系方式，以便之后可以联系你。在这角色扮演当中，你就是“订阅者”，面
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/e482436e/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/75311b2d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/75311b2d/" itemprop="url">Haroopad syntax</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T20:11:38+08:00">
+                2017-10-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T20:15:00+08:00">
+                2017-10-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Standard Markdown
+\   backslash
+`   backtick
+*   asterisk
+_   underscore
+{}  curly braces
+[]  square brackets
+()  parentheses
+#   hash mark
++   plus s
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/75311b2d/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
 
 
-<script src="/js/script.js"></script>
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/c4d910e6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/c4d910e6/" itemprop="url">自动备份Hexo博客源文件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T09:35:28+08:00">
+                2017-10-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T09:38:22+08:00">
+                2017-10-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          自动备份Hexo博客源文件原文链接
+
+  用Hexo写博客是一件比较享受的事情，无奈如果换电脑的话，备份博客就是一件比较闹心的事情。
+前言  我曾经给出过通过Git备份Hexo博客源文件的方式，这种方式虽然能够备份Hexo博客的源文件，但是对于博主这种懒人，每次更新博文都需要输入两三行重复的Git命
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/c4d910e6/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/7dbd74b3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/7dbd74b3/" itemprop="url">备份Hexo博客源文件</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T09:33:36+08:00">
+                2017-10-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T09:41:04+08:00">
+                2017-10-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          原文链接
+
+前言使用Hexo编写博客还是比较Nice的。但是有一个问题就是:Hexo博客的源文件都是放在本地的，如果更换了电脑需要更新博客或者不小心博客源文件丢失，那将是一件非常糟心的事情了。未雨绸缪，现在给出这个问题的一种解决办法吧。
+备份方案想到的解决办法无非是:
+
+将博客源文件拷贝到U盘里。
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/7dbd74b3/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/f1b1a05b/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/f1b1a05b/" itemprop="url">如何正确学习JavaScript</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-18T19:48:00+08:00">
+                2017-10-18
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-18T22:56:07+08:00">
+                2017-10-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          【转】如何正确学习 JavaScript原文链接
+
+“No one saves us but ourselves. No one can and no one may. We ourselves must walk the path.   -Buddha”
+
+正确学习 JavaScript（写给非 
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/f1b1a05b/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/61245e5/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/61245e5/" itemprop="url">Hexo建站笔记</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T20:05:36+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-15T21:30:59+08:00">
+                2017-10-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          方法一：添加文章结束标记最简单的方法在主题配置hexo\themes\next\layout\_macro下的post.swig添加下面的代码
+123456789101112131415161718192021222324&#123;#####################&#125;&#123;
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/61245e5/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/e7fa2d4f/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/e7fa2d4f/" itemprop="url">Hexo添加文章时自动打开编辑器</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T19:52:53+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-18T23:12:31+08:00">
+                2017-10-18
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          文章更新 2017-10-18
+更正Windows下spawn命令，并且在win10下测试通过。原文链接
+在Hexo中新建一篇博文非常简单，只需要在命令行中键入以下命令然后回车即可：
+hexo new &quot;The title of your blog&quot;
+此后Hexo便会在Hexo的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/e7fa2d4f/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/ae382d5a/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/ae382d5a/" itemprop="url">解决Hexo NexT主题访问慢</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T17:21:59+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-15T18:34:29+08:00">
+                2017-10-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          最近一段时间博客打开速度很慢（博客使用Hexo搭建在Github Page上），浏览器检查网络信息后发现是因为fonts.googleapis.com加载极慢。Google了一下，发现了解决方案。
+把在NexT主题的_config.yml里面的：
+12# Uri of fonts host. E.g
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/ae382d5a/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/b82238ff/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/b82238ff/" itemprop="url"> Chrome 错误代码 ERR_UNSAFE_PORT</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T16:57:11+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-15T17:20:54+08:00">
+                2017-10-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          公司运维同事在部署项目的时候，不知道为什么用火狐可以访问，用chrome不能访问。仔细查看了chrome的错误，发现是ERR_UNSAFE_PORT，这个应该不是服务器错误，也不是网络错误，从字面上来看是不安全的端口，于是在网上搜索这个问题才找到问题所在：原来是6666端口的问题。
+错误代码ERR_
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/b82238ff/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/454d64d8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/posts/454d64d8/" itemprop="url">此地址使用了一个通常用于网络浏览以外的端口</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-15T15:02:16+08:00">
+                2017-10-15
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-15T16:48:36+08:00">
+                2017-10-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          
+FireFox打开80以外的端口（例如 localhost:4000），会弹出以下提示：
+此地址使用了一个通常用于网络浏览以外的端口。出于安全原因，Firefox 取消了该请求。
+
+经网上搜索，解决方法如下：
+在Firefox地址栏输入about:config,然后在右键新建一个字符串键netwo
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/posts/454d64d8/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+	</div>
+	
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+  </section>
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+
+          
+ 
+
+   
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="小飞机" />
+          <p class="site-author-name" itemprop="name">小飞机</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">27</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">9</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/anson2416" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/xialiluo" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:citygo@gmail.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="git" target="_blank" title="type">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      type
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://anson2416@github.com/anson2416/anson2416.github.io.git" target="_blank" title="repo">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      repo
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="master" target="_blank" title="branch">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      branch
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="更新博客。" target="_blank" title="message">
+                  
+                    <i class="fa fa-fw fa-globe"></i>
+                  
+                    
+                      message
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小飞机</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Gemini
+  </a>
+</div>
+
+<!-- 网站底部字数统计 -->
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
 
   </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+  
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           function ShowGitment(){
+               document.getElementById("gitment-display-button").style.display = "none";
+               document.getElementById("gitment-container").style.display = "block";
+               var gitment = new Gitment({
+                   id: window.location.pathname, 
+                   owner: 'anson2416',
+                   repo: 'anson2416.github.io',
+                   oauth: {
+                       client_id: '6bfd187fa7a08e8b9a45',
+                       client_secret: '3171b5570694a4efd1a79c79e8da04e6f7ada5d5',
+                   }});
+               gitment.render('gitment-container');
+           }
+       </script>
+   
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <!-- 为代码块添加复制功能 -->
+ <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
+ 
 </body>
 </html>
