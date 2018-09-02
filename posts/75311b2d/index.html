@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="software," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="Standard Markdown \   backslash `   backtick *   asterisk _   underscore {}  curly braces []  square brackets ()  parentheses #   hash mark +   plus sign -   minus sign (hyphen) .   dot !   exclamatio">
+<meta name="keywords" content="software">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Haroopad syntax">
+<meta property="og:url" content="http://yoursite.com/posts/75311b2d/index.html">
+<meta property="og:site_name" content="小飞机的博客">
+<meta property="og:description" content="Standard Markdown \   backslash `   backtick *   asterisk _   underscore {}  curly braces []  square brackets ()  parentheses #   hash mark +   plus sign -   minus sign (hyphen) .   dot !   exclamatio">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://pad.haroopress.com/assets/images/logo-small.png">
+<meta property="og:updated_time" content="2017-10-22T12:15:00.274Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Haroopad syntax">
+<meta name="twitter:description" content="Standard Markdown \   backslash `   backtick *   asterisk _   underscore {}  curly braces []  square brackets ()  parentheses #   hash mark +   plus sign -   minus sign (hyphen) .   dot !   exclamatio">
+<meta name="twitter:image" content="http://pad.haroopress.com/assets/images/logo-small.png">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/posts/75311b2d/"/>
+
+
+
+
+
+  <title>Haroopad syntax | 小飞机的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小飞机的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一直沉默的猪</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/75311b2d/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Haroopad syntax</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-22T20:11:38+08:00">
+                2017-10-22
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-22T20:15:00+08:00">
+                2017-10-22
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+			<span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+			<span class="post-meta-item-text">热度 </span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+			<span>℃</span>
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h2 id="Standard-Markdown"><a href="#Standard-Markdown" class="headerlink" title="Standard Markdown"></a>Standard Markdown</h2><ul>
+<li>\   backslash</li>
+<li>`   backtick</li>
+<li>*   asterisk</li>
+<li>_   underscore</li>
+<li>{}  curly braces</li>
+<li>[]  square brackets</li>
+<li>()  parentheses</li>
+<li>#   hash mark</li>
+<li>+   plus sign</li>
+<li>-   minus sign (hyphen)</li>
+<li>.   dot</li>
+<li>!   exclamation mark</li>
+</ul>
+<h5 id="HEADERS"><a href="#HEADERS" class="headerlink" title="HEADERS"></a>HEADERS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">This is an H1</span><br><span class="line">=============</span><br><span class="line"></span><br><span class="line">This is an H2</span><br><span class="line">-------------</span><br></pre></td></tr></table></figure>
+<p>Any number of underlining =’s or -’s will work.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># This is an H1</span></span><br><span class="line"></span><br><span class="line"><span class="section">## This is an H2</span></span><br><span class="line"></span><br><span class="line"><span class="section">###### This is an H6</span></span><br></pre></td></tr></table></figure>
+<h5 id="BLOCKQUOTES"><a href="#BLOCKQUOTES" class="headerlink" title="BLOCKQUOTES"></a>BLOCKQUOTES</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; This is the first level of quoting.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; &gt; This is nested blockquote.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; Back to the first level.</span></span><br></pre></td></tr></table></figure>
+<p>Blockquotes can contain other Markdown elements, including headers, lists, and code blocks:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; ## This is a header.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; 1.   This is the first list item.</span></span><br><span class="line"><span class="quote">&gt; 2.   This is the second list item.</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt; Here's some example code:</span></span><br><span class="line">&gt;</span><br><span class="line"><span class="quote">&gt;     return shell_exec("echo $input | $markdown_script");</span></span><br></pre></td></tr></table></figure>
+<h5 id="LISTS"><a href="#LISTS" class="headerlink" title="LISTS"></a>LISTS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*   </span>Red</span><br><span class="line"><span class="bullet">*   </span>Green</span><br><span class="line"><span class="bullet">*   </span>Blue</span><br></pre></td></tr></table></figure>
+<p>is equivalent to:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">+   </span>Red</span><br><span class="line"><span class="bullet">+   </span>Green</span><br><span class="line"><span class="bullet">+   </span>Blue</span><br></pre></td></tr></table></figure>
+<p>and:</p>
+<figure class="highlight haml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">-<span class="ruby">   Red</span></span><br><span class="line"><span class="ruby">-   Green</span></span><br><span class="line"><span class="ruby">-   Blue</span></span><br></pre></td></tr></table></figure>
+<p>Ordered lists use numbers followed by periods:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.  </span>Bird</span><br><span class="line"><span class="bullet">2.  </span>McHale</span><br><span class="line"><span class="bullet">3.  </span>Parish</span><br></pre></td></tr></table></figure>
+<h5 id="CODE-BLOCKS"><a href="#CODE-BLOCKS" class="headerlink" title="CODE BLOCKS"></a>CODE BLOCKS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">This is a normal paragraph:</span><br><span class="line"></span><br><span class="line"><span class="code">    This is a code block.</span></span><br></pre></td></tr></table></figure>
+<p>One level of indentation — 4 spaces or 1 tab — is removed from each line of the code block. For example, this:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Here is an example of AppleScript:</span><br><span class="line"></span><br><span class="line"><span class="code">    tell application "Foo"</span></span><br><span class="line"><span class="code">        beep</span></span><br><span class="line"><span class="code">    end tell</span></span><br></pre></td></tr></table></figure>
+<h5 id="HORIZONTAL-RULES"><a href="#HORIZONTAL-RULES" class="headerlink" title="HORIZONTAL RULES"></a>HORIZONTAL RULES</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">* </span><span class="bullet">* *</span></span><br><span class="line"></span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line"></span><br><span class="line"><span class="strong">*****</span></span><br><span class="line"></span><br><span class="line"><span class="bullet">- </span>- -</span><br><span class="line"></span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
+<h5 id="LINKS"><a href="#LINKS" class="headerlink" title="LINKS"></a>LINKS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">This is [<span class="string">an example</span>](<span class="link">http://example.com/ "Title"</span>) inline link.</span><br><span class="line"></span><br><span class="line">[<span class="string">This link</span>](<span class="link">http://example.net/</span>) has no title attribute.</span><br></pre></td></tr></table></figure>
+<p>Here’s an example of reference links in action:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">I get 10 times more traffic from [<span class="string">Google</span>][<span class="symbol"></span>] than from</span><br><span class="line">[<span class="string">Yahoo</span>][<span class="symbol"></span>] or [<span class="string">MSN</span>][<span class="symbol"></span>].</span><br><span class="line"></span><br><span class="line">  [google]: http://google.com/        "Google"</span><br><span class="line">  [yahoo]:  http://search.yahoo.com/  "Yahoo Search"</span><br><span class="line">  [msn]:    http://search.msn.com/    "MSN Search"</span><br></pre></td></tr></table></figure>
+<h5 id="EMPHASIS"><a href="#EMPHASIS" class="headerlink" title="EMPHASIS"></a>EMPHASIS</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="emphasis">*single asterisks*</span></span><br><span class="line"></span><br><span class="line"><span class="emphasis">_single underscores_</span>  (not support in haroopad)</span><br><span class="line"></span><br><span class="line"><span class="strong">**double asterisks**</span></span><br><span class="line"></span><br><span class="line"><span class="strong">__double underscores__</span></span><br></pre></td></tr></table></figure>
+<h5 id="CODE"><a href="#CODE" class="headerlink" title="CODE"></a>CODE</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Use the <span class="code">`printf()`</span> function.</span><br></pre></td></tr></table></figure>
+<p>Use the <code>printf()</code> function.</p>
+<h5 id="IMAGES"><a href="#IMAGES" class="headerlink" title="IMAGES"></a>IMAGES</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">Alt text</span>](<span class="link">/path/to/img.jpg</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">Alt text</span>](<span class="link">/path/to/img.jpg "Optional title"</span>)</span><br><span class="line"></span><br><span class="line">![<span class="string">Alt text</span>][<span class="symbol">id</span>]</span><br><span class="line">[<span class="symbol">id</span>]: <span class="link">/path/to/img.jpg "Optional title"</span></span><br></pre></td></tr></table></figure>
+<h5 id="EMAIL"><a href="#EMAIL" class="headerlink" title="EMAIL"></a>EMAIL</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Contact to <span class="xml"><span class="tag">&lt;<span class="name">example@example.com</span>&gt;</span></span>.</span><br></pre></td></tr></table></figure>
+<p>Contact to <a href="mailto:&#101;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#64;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#46;&#99;&#111;&#x6d;" target="_blank" rel="noopener">&#101;&#120;&#97;&#109;&#x70;&#x6c;&#101;&#64;&#x65;&#x78;&#97;&#109;&#x70;&#108;&#x65;&#46;&#99;&#111;&#x6d;</a>.</p>
+<h2 id="Github-Flavored-Markdown"><a href="#Github-Flavored-Markdown" class="headerlink" title="Github Flavored Markdown"></a>Github Flavored Markdown</h2><blockquote>
+<p>ref: <a href="https://help.github.com/articles/github-flavored-markdown" target="_blank" rel="noopener">https://help.github.com/articles/github-flavored-markdown</a></p>
+</blockquote>
+<h5 id="Newlines"><a href="#Newlines" class="headerlink" title="Newlines"></a>Newlines</h5><p>The next paragraph contains two phrases separated by a single newline character</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Haroopad</span><br><span class="line">The next document processor</span><br></pre></td></tr></table></figure>
+<p>Haroopad<br>The next document processor</p>
+<h5 id="Multiple-underscores-in-words"><a href="#Multiple-underscores-in-words" class="headerlink" title="Multiple underscores in words"></a>Multiple underscores in words</h5><p>It is not reasonable to italicize just part of a word, especially when you’re dealing with code and names often appear with multiple underscores. Therefore, GFM ignores multiple underscores in words.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">perform<span class="emphasis">_complicated_</span>task</span><br><span class="line">do<span class="emphasis">_this_</span>and<span class="emphasis">_do_</span>that<span class="emphasis">_and_</span>another_thing</span><br></pre></td></tr></table></figure>
+<p>perform_complicated_task<br>do_this_and_do_that_and_another_thing</p>
+<h5 id="URL-autolinking"><a href="#URL-autolinking" class="headerlink" title="URL autolinking"></a>URL autolinking</h5><p>GFM will autolink standard URLs, so if you want to link to a URL (instead of setting link text), you can simply enter the URL and it will be turned into a link to that URL.</p>
+<h5 id="Table"><a href="#Table" class="headerlink" title="Table"></a>Table</h5><p>Tables aren’t part of the core Markdown spec, but they are part of GFM and Markdown Here supports them.</p>
+<p>Colons(:) can be used to align columns.</p>
+<p>Left   : <code>|:------|</code><br>Right  : <code>|------:|</code><br>Center : <code>|:-----:|</code></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| name  | age | gender    | money  |</span><br><span class="line">|-------|:---:|-----------|-------:|</span><br><span class="line">| rhio  | 384 | robot     | $3,000 |</span><br><span class="line">| haroo | .3  | bird      | $430   |</span><br><span class="line">| jedi  | ?   | undefined | $0     |</span><br></pre></td></tr></table></figure>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th style="text-align:center">age</th>
+<th>gender</th>
+<th style="text-align:right">money</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rhio</td>
+<td style="text-align:center">384</td>
+<td>robot</td>
+<td style="text-align:right">$3,000</td>
+</tr>
+<tr>
+<td>haroo</td>
+<td style="text-align:center">.3</td>
+<td>bird</td>
+<td style="text-align:right">$430</td>
+</tr>
+<tr>
+<td>jedi</td>
+<td style="text-align:center">?</td>
+<td>undefined</td>
+<td style="text-align:right">$0</td>
+</tr>
+</tbody>
+</table>
+<h5 id="Fenced-code-blocks"><a href="#Fenced-code-blocks" class="headerlink" title="Fenced code blocks"></a>Fenced code blocks</h5><p>Markdown converts text with four spaces at the front of each line to code blocks. GFM supports that, but we also support fenced blocks. Just wrap your code blocks in <figure class="highlight plain"><figcaption><span>you won't need to indent manually to trigger a code block. Keep in mind that both types of code blocks need to have a blank line before them:</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">Here&apos;s an example:</span><br></pre></td></tr></table></figure></p>
+<p>function test() {<br>  console.log(“notice the blank line before this function?”);<br>}<br><figure class="highlight vbnet"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="meta">##### Syntax highlighting</span></span><br><span class="line"></span><br><span class="line">We <span class="keyword">take</span> code blocks a <span class="keyword">step</span> further <span class="keyword">and</span> add syntax highlighting <span class="keyword">if</span> you request it. <span class="keyword">In</span> your fenced block, add an <span class="keyword">optional</span> language identifier <span class="keyword">and</span> we<span class="comment">'ll run it through syntax highlighting. For example, to syntax highlight Ruby code:</span></span><br><span class="line"></span><br><span class="line">```ruby</span><br><span class="line">require <span class="comment">'redcarpet'</span></span><br><span class="line">markdown = Redcarpet.<span class="keyword">new</span>(<span class="string">"Hello World!"</span>)</span><br><span class="line">puts markdown.to_html</span><br></pre></td></tr></table></figure></p>
+<h5 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h5><p>A table of contents, usually headed simply “Contents” and abbreviated informally as TOC, is a list of the parts of a book or document organized in the order in which the parts appear.</p>
+<p>It will generate a table of content that you can insert <code>[TOC]</code> at the top of your markdown file.</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[TOC]</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"> Header 1</span></span><br><span class="line">Content 1</span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment"># Header 2</span></span></span><br><span class="line">Content 2</span><br></pre></td></tr></table></figure>
+<p><strong>example</strong></p>
+<p>[TOC]</p>
+<h2 id="Extras-only-haroopad"><a href="#Extras-only-haroopad" class="headerlink" title="Extras (only haroopad)"></a>Extras (only haroopad)</h2><blockquote>
+<p>Experimental since v0.6.0</p>
+</blockquote>
+<h5 id="Highlight"><a href="#Highlight" class="headerlink" title="Highlight"></a>Highlight</h5><p><strong>Highlight</strong> (and highlights, highlighting, etc.) may refer to:</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Syntax ==highlighting==, <span class="strong">**display of text**</span> in different colors and/or fonts, depending upon its meaning in context (e.g. different parts of speech in a sentence, or ==function==  vs. ==variables names== in computer source code)</span><br></pre></td></tr></table></figure>
+<p>Syntax ==highlighting==, <strong>display of text</strong> in different colors and/or fonts, depending upon its meaning in context (e.g. different parts of speech in a sentence, or ==function== vs. ==variables names== in computer source code)</p>
+<h5 id="Underline"><a href="#Underline" class="headerlink" title="Underline"></a>Underline</h5><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">An ++underline++, also called an underscore is one or more horizontal lines immediately below a portion of writing.</span><br></pre></td></tr></table></figure>
+<p>An ++underline++, also called an underscore is one or more ++horizontal lines++ immediately below a portion of writing.</p>
+<h5 id="Embedding"><a href="#Embedding" class="headerlink" title="Embedding"></a>Embedding</h5><p>웹 문서를 작성하다 보면 비디오, 음악을 포함한 다양한 온라인 콘텐츠를 이용하기 마련이다.  이에 경량의 문법을 이용하는 마크다운의 특성을 유지하고 기존의 마크다운 사용자 경험에 크게 벗어나지 않으며 강력한 웹 콘텐츠를 문서내에 쉽게 추가할 수 있도록 새로운 문법을 추가하였다.</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">@[<span class="string">Vimeo Video</span>](<span class="link">https://vimeo.com/70762354 'float:left;width:400px'</span>)</span><br><span class="line"></span><br><span class="line"><span class="strong">**Haroopad**</span> is a markdown enabled document processor for creating web-friendly documents.</span><br><span class="line"></span><br><span class="line">You can author professional-looking documents of various formats: blog posts, slides, presentations, reports, email and more.</span><br><span class="line"></span><br><span class="line">Haroopad gives you the same editing experience regardless of the platform you are working on. It runs on all three major operating systems—Windows, Mac OS X, and Linux.</span><br><span class="line"></span><br><span class="line">![<span class="string">haroopad icon</span>](<span class="link">http://pad.haroopress.com/assets/images/logo-small.png</span>)</span><br></pre></td></tr></table></figure>
+<p>@<a href="https://vimeo.com/70762354" title="float:left;width:500px;height:300px;margin-right:10px;" target="_blank" rel="noopener">Haroopad intro</a></p>
+<p><strong>Haroopad</strong> is a markdown enabled document processor for creating web-friendly documents.</p>
+<p>You can author professional-looking documents of various formats: blog posts, slides, presentations, reports, email and more.</p>
+<p>Haroopad gives you the same editing experience regardless of the platform you are working on. It runs on all three major operating systems—Windows, Mac OS X, and Linux.</p>
+<p><img src="http://pad.haroopress.com/assets/images/logo-small.png" alt="haroopad icon"></p>
+<h5 id="Mathematics-Expression"><a href="#Mathematics-Expression" class="headerlink" title="Mathematics Expression"></a>Mathematics Expression</h5><p>Haroopad uses MathJax to render LaTeX. You can use triple dollar sign (<code>$$$..$$$</code>) to delimit inline equations, and double dollars (<code>$$..$$</code>) for blocks</p>
+<p><strong>example</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">The <span class="emphasis">*Gamma function*</span> satisfying $\Gamma(n) = (n-1)!\quad\forall</span><br><span class="line">n\in\mathbb N$ is via through the Euler integral</span><br><span class="line"></span><br><span class="line">$$</span><br><span class="line">\Gamma(z) = \int_0^\infty t^&#123;z-1&#125;e^&#123;-t&#125;dt\,.</span><br><span class="line">$$</span><br></pre></td></tr></table></figure>
+<p><strong>become</strong></p>
+<p>The <em>Gamma function</em> satisfying $\Gamma(n) = (n-1)!\quad\forall<br>n\in\mathbb N$ is via through the Euler integral</p>
+<p>$$<br>\Gamma(z) = \int_0^\infty t^{z-1}e^{-t}dt\,.<br>$$</p>
+<h5 id="Diagram"><a href="#Diagram" class="headerlink" title="Diagram"></a>Diagram</h5><p>This statement helps to render the flow charts and diagrams to extend the fence code block.</p>
+<p>Just write the <code>mermaid</code> grammar in the fenced code block, as in the example below.</p>
+<p>You get the detail - <a href="https://github.com/knsv/mermaid/wiki" target="_blank" rel="noopener">Click Here</a></p>
+<p><strong>example</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```mermaid</span></span><br><span class="line"><span class="code">graph TD;</span></span><br><span class="line"><span class="code">  A--&gt;B;</span></span><br><span class="line"><span class="code">  A--&gt;D;</span></span><br><span class="line"><span class="code">  B--&gt;C;</span></span><br><span class="line"><span class="code">  D--&gt;C;</span></span><br><span class="line"><span class="code">```</span></span><br></pre></td></tr></table></figure>
+<p><strong>become</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">graph TD;</span><br><span class="line">  A--&gt;B;</span><br><span class="line">  A--&gt;D;</span><br><span class="line">  B--&gt;C;</span><br><span class="line">  D--&gt;C;</span><br></pre></td></tr></table></figure>
+<h5 id="Tasklist"><a href="#Tasklist" class="headerlink" title="Tasklist"></a>Tasklist</h5><p>So that it can be represented as a checkbox item GFM statement.<br>This statement is useful when you create the TODO or Checklist.</p>
+<p><strong>example</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">- </span>[ ] first task</span><br><span class="line"><span class="bullet">- </span>[x] second task is done</span><br><span class="line"><span class="bullet">- </span>[ ] third task</span><br></pre></td></tr></table></figure>
+<ul>
+<li style="list-style: none"><input type="checkbox"> first task</li>
+<li style="list-style: none"><input type="checkbox" checked> second task is done</li>
+<li style="list-style: none"><input type="checkbox"> third task</li>
+</ul>
+<h5 id="Presentation"><a href="#Presentation" class="headerlink" title="Presentation"></a>Presentation</h5><p>Just insert <code>***</code> or <code>---</code> separator to separate each slide.</p>
+<p><strong>example</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## slide1 title</span></span><br><span class="line"></span><br><span class="line">slide2 content</span><br><span class="line"></span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line"></span><br><span class="line"><span class="section">## slide2 title</span></span><br><span class="line"></span><br><span class="line">slide2 content</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+		<ul class="post-copyright">
+		  <li class="post-copyright-author">
+			  <strong>本文作者：</strong>小飞机
+		  </li>
+		  <li class="post-copyright-link">
+			<strong>本文链接：</strong>
+			<a href="/posts/75311b2d/" title="Haroopad syntax">posts/75311b2d/</a>
+		  </li>
+		  <li class="post-copyright-license">
+			<strong>版权声明： </strong>
+			本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！
+		  </li>
+		</ul>
+	  
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------本文结束<i class="fa fa-paw"></i>感谢阅读------</div>
+    
+</div>
+	  
+	</div>
+	
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="小飞机 WeChat Pay"/>
+        <p>微信支付(WeChat Pay)</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/software/" rel="tag"><i class="fa fa-tag"></i> software</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/c4d910e6/" rel="next" title="自动备份Hexo博客源文件">
+                <i class="fa fa-chevron-left"></i> 自动备份Hexo博客源文件
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/e482436e/" rel="prev" title="前端学习笔记之观察者模式">
+                前端学习笔记之观察者模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+    
+	
+		
+         <div onclick="ShowGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+         <div id="gitment-container" style="display:none"></div>
+       
+	  
+	
+	  
+
+ 
+
+   
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="小飞机" />
+          <p class="site-author-name" itemprop="name">小飞机</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/anson2416" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/xialiluo" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:citygo@gmail.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Standard-Markdown"><span class="nav-number">1.</span> <span class="nav-text">Standard Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#HEADERS"><span class="nav-number">1.0.0.1.</span> <span class="nav-text">HEADERS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#BLOCKQUOTES"><span class="nav-number">1.0.0.2.</span> <span class="nav-text">BLOCKQUOTES</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#LISTS"><span class="nav-number">1.0.0.3.</span> <span class="nav-text">LISTS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#CODE-BLOCKS"><span class="nav-number">1.0.0.4.</span> <span class="nav-text">CODE BLOCKS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#HORIZONTAL-RULES"><span class="nav-number">1.0.0.5.</span> <span class="nav-text">HORIZONTAL RULES</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#LINKS"><span class="nav-number">1.0.0.6.</span> <span class="nav-text">LINKS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#EMPHASIS"><span class="nav-number">1.0.0.7.</span> <span class="nav-text">EMPHASIS</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#CODE"><span class="nav-number">1.0.0.8.</span> <span class="nav-text">CODE</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#IMAGES"><span class="nav-number">1.0.0.9.</span> <span class="nav-text">IMAGES</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#EMAIL"><span class="nav-number">1.0.0.10.</span> <span class="nav-text">EMAIL</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Github-Flavored-Markdown"><span class="nav-number">2.</span> <span class="nav-text">Github Flavored Markdown</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Newlines"><span class="nav-number">2.0.0.1.</span> <span class="nav-text">Newlines</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Multiple-underscores-in-words"><span class="nav-number">2.0.0.2.</span> <span class="nav-text">Multiple underscores in words</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#URL-autolinking"><span class="nav-number">2.0.0.3.</span> <span class="nav-text">URL autolinking</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Table"><span class="nav-number">2.0.0.4.</span> <span class="nav-text">Table</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Fenced-code-blocks"><span class="nav-number">2.0.0.5.</span> <span class="nav-text">Fenced code blocks</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Table-of-Contents"><span class="nav-number">2.0.0.6.</span> <span class="nav-text">Table of Contents</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Extras-only-haroopad"><span class="nav-number">3.</span> <span class="nav-text">Extras (only haroopad)</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#Highlight"><span class="nav-number">3.0.0.1.</span> <span class="nav-text">Highlight</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Underline"><span class="nav-number">3.0.0.2.</span> <span class="nav-text">Underline</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Embedding"><span class="nav-number">3.0.0.3.</span> <span class="nav-text">Embedding</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Mathematics-Expression"><span class="nav-number">3.0.0.4.</span> <span class="nav-text">Mathematics Expression</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Diagram"><span class="nav-number">3.0.0.5.</span> <span class="nav-text">Diagram</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Tasklist"><span class="nav-number">3.0.0.6.</span> <span class="nav-text">Tasklist</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#Presentation"><span class="nav-number">3.0.0.7.</span> <span class="nav-text">Presentation</span></a></li></ol></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小飞机</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Gemini
+  </a>
+</div>
+
+<!-- 网站底部字数统计 -->
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           function ShowGitment(){
+               document.getElementById("gitment-display-button").style.display = "none";
+               document.getElementById("gitment-container").style.display = "block";
+               var gitment = new Gitment({
+                   id: window.location.pathname, 
+                   owner: 'anson2416',
+                   repo: 'anson2416.github.io',
+                   oauth: {
+                       client_id: '6bfd187fa7a08e8b9a45',
+                       client_secret: '3171b5570694a4efd1a79c79e8da04e6f7ada5d5',
+                   }});
+               gitment.render('gitment-container');
+           }
+       </script>
+   
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <!-- 为代码块添加复制功能 -->
+ <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
+ 
+</body>
+</html>

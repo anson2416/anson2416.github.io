@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+  
+  
+    
+    
+  <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
+  <link href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2" rel="stylesheet">
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.lug.ustc.edu.cn/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="software,hexo," />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.2" />
+
+
+
+
+
+
+<meta name="description" content="文章来源: Never_yu’s Blog 本篇文章将介绍基于NexT主题下的一些扩展功能的实现。首先，我们需要明白：  在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。我们约定，将前者称为 站点配置文件，后者称为 主题配置文件  1.设置">
+<meta name="keywords" content="software,hexo">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo-NexT搭建个人博客（二）">
+<meta property="og:url" content="http://yoursite.com/posts/d3b00179/index.html">
+<meta property="og:site_name" content="小飞机的博客">
+<meta property="og:description" content="文章来源: Never_yu’s Blog 本篇文章将介绍基于NexT主题下的一些扩展功能的实现。首先，我们需要明白：  在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。我们约定，将前者称为 站点配置文件，后者称为 主题配置文件  1.设置">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-15T11:45:51.385Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo-NexT搭建个人博客（二）">
+<meta name="twitter:description" content="文章来源: Never_yu’s Blog 本篇文章将介绍基于NexT主题下的一些扩展功能的实现。首先，我们需要明白：  在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。我们约定，将前者称为 站点配置文件，后者称为 主题配置文件  1.设置">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":12,"b2t":false,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/posts/d3b00179/"/>
+
+
+
+
+
+  <title>Hexo-NexT搭建个人博客（二） | 小飞机的博客</title>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">小飞机的博客</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">一直沉默的猪</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/posts/d3b00179/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="小飞机">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小飞机的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Hexo-NexT搭建个人博客（二）</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-13T23:56:06+08:00">
+                2017-10-13
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2017-10-15T19:45:51+08:00">
+                2017-10-15
+              </time>
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/programming/" itemprop="url" rel="index">
+                    <span itemprop="name">programming;</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+		
+		
+          
+			<span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-eye"></i>
+			<span class="post-meta-item-text">热度 </span>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
+			<span>℃</span>
+          
+		
+
+          
+			
+            <div class="post-wordcount">
+              
+                
+                  <span class="post-meta-divider">|</span>
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计</span>
+                
+                <span title="字数统计">
+                  
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长</span>
+                
+                <span title="阅读时长">
+                  
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>文章来源: <a href="https://neveryu.github.io/2016/09/30/hexo-next-two/" target="_blank" rel="noopener">Never_yu’s Blog</a></p>
+<p>本篇文章将介绍基于NexT主题下的一些扩展功能的实现。<br>首先，我们需要明白：</p>
+<blockquote>
+<p>在 Hexo 中有两份主要的配置文件，其名称都是 _config.yml 。其中，一份位于站点根目录下，主要包含 Hexo<br>本身的配置；另一份位于主题目录下，这份配置由主题作者提供，主要用于配置主题相关的选项。<br>我们约定，将前者称为 <span id="inline-blue">站点配置文件</span>，后者称为 <span id="inline-purple">主题配置文件</span></p>
+</blockquote>
+<h4 id="1-设置侧栏的位置"><a href="#1-设置侧栏的位置" class="headerlink" title="1.设置侧栏的位置"></a><a href="#1-设置侧栏的位置" title="1.设置侧栏的位置"></a>1.设置侧栏的位置</h4><p>修改 <span id="inline-purple">主题配置文件</span> 中 <code>sidebar.position</code> 的值，支持的选项有：<strong>left</strong> <strong>right</strong><br>目前仅 Pisces Scheme 支持 position 配置，也就是说NexT主题的侧栏位置是不能设置的，设置了也没用，反正都在右边。</p>
+<p><a id="more"></a></p>
+<h4 id="2-关于添加居中模块"><a href="#2-关于添加居中模块" class="headerlink" title="2. 关于添加居中模块"></a><a href="#2-关于添加居中模块" title="2\. 关于添加居中模块"></a>2. 关于添加居中模块</h4><blockquote>
+<p>优秀的人，不是不合群，而是他们合群的人里面没有你</p>
+</blockquote>
+<p>代码如下：<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">blockquote</span> <span class="attr">class</span>=<span class="string">"blockquote-center"</span>&gt;</span>优秀的人，不是不合群，而是他们合群的人里面没有你<span class="tag">&lt;/<span class="name">blockquote</span>&gt;</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="3-添加High一下"><a href="#3-添加High一下" class="headerlink" title="3. 添加High一下"></a><a href="#3-添加High一下" title="3\. 添加High一下"></a>3. 添加High一下</h4><p>打开博客根目录 <code>\themes\next\layout\_partials\header.swig</code> ，在<br><code>&lt;ul&gt; ... /ul&gt;</code> 标签之间加入以下代码：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&lt;li&gt; <span class="xml"><span class="tag">&lt;<span class="name">a</span> <span class="attr">title</span>=<span class="string">"把这个链接拖到你的Chrome收藏夹工具栏中"</span> <span class="attr">href</span>=<span class="string">'javascript:(function() &#123;</span></span></span></span><br><span class="line"><span class="xml">    function c() &#123;</span></span><br><span class="line"><span class="xml">        var e = document.createElement("link");</span></span><br><span class="line"><span class="xml">        e.setAttribute("type", "text/css");</span></span><br><span class="line"><span class="xml">        e.setAttribute("rel", "stylesheet");</span></span><br><span class="line"><span class="xml">        e.setAttribute("href", f);</span></span><br><span class="line"><span class="xml">        e.setAttribute("class", l);</span></span><br><span class="line"><span class="xml">        document.body.appendChild(e)</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function h() &#123;</span></span><br><span class="line"><span class="xml">        var e = document.getElementsByClassName(l);</span></span><br><span class="line"><span class="xml">        for (var t = 0; t <span class="tag">&lt; <span class="attr">e.length</span>; <span class="attr">t</span>++) &#123;</span></span></span><br><span class="line"><span class="xml">            document.body.removeChild(e[t])</span></span><br><span class="line"><span class="xml">        &#125;</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function p() &#123;</span></span><br><span class="line"><span class="xml">        var e = document.createElement("div");</span></span><br><span class="line"><span class="xml">        e.setAttribute("class", a);</span></span><br><span class="line"><span class="xml">        document.body.appendChild(e);</span></span><br><span class="line"><span class="xml">        setTimeout(function() &#123;</span></span><br><span class="line"><span class="xml">            document.body.removeChild(e)</span></span><br><span class="line"><span class="xml">        &#125;, 100)</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function d(e) &#123;</span></span><br><span class="line"><span class="xml">        return &#123;</span></span><br><span class="line"><span class="xml">            height : e.offsetHeight,</span></span><br><span class="line"><span class="xml">            width : e.offsetWidth</span></span><br><span class="line"><span class="xml">        &#125;</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function v(i) &#123;</span></span><br><span class="line"><span class="xml">        var s = d(i);</span></span><br><span class="line"><span class="xml">        return s.height &gt; e &amp;&amp; s.height <span class="tag">&lt; <span class="attr">n</span> &amp;&amp; <span class="attr">s.width</span> &gt;</span> t &amp;&amp; s.width <span class="tag">&lt; <span class="attr">r</span></span></span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function m(e) &#123;</span></span><br><span class="line"><span class="xml">        var t = e;</span></span><br><span class="line"><span class="xml">        var n = 0;</span></span><br><span class="line"><span class="xml">        while (!!t) &#123;</span></span><br><span class="line"><span class="xml">            n += t.offsetTop;</span></span><br><span class="line"><span class="xml">            t = t.offsetParent</span></span><br><span class="line"><span class="xml">        &#125;</span></span><br><span class="line"><span class="xml">        return n</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function g() &#123;</span></span><br><span class="line"><span class="xml">        var e = document.documentElement;</span></span><br><span class="line"><span class="xml">        if (!!window.innerWidth) &#123;</span></span><br><span class="line"><span class="xml">            return window.innerHeight</span></span><br><span class="line"><span class="xml">        &#125; else if (e &amp;&amp; !isNaN(e.clientHeight)) &#123;</span></span><br><span class="line"><span class="xml">            return e.clientHeight</span></span><br><span class="line"><span class="xml">        &#125;</span></span><br><span class="line"><span class="xml">        return 0</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function y() &#123;</span></span><br><span class="line"><span class="xml">        if (window.pageYOffset) &#123;</span></span><br><span class="line"><span class="xml">            return window.pageYOffset</span></span><br><span class="line"><span class="xml">        &#125;</span></span><br><span class="line"><span class="xml">        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)</span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function E(e) &#123;</span></span><br><span class="line"><span class="xml">        var t = m(e);</span></span><br><span class="line"><span class="xml">        return t &gt;= w &amp;&amp; t <span class="tag">&lt;<span class="name">=</span> <span class="attr">b</span> + <span class="attr">w</span></span></span></span><br><span class="line"><span class="xml">    &#125;</span></span><br><span class="line"><span class="xml">    function S() &#123;</span></span><br><span class="line"><span class="xml">        var e = document.createElement("audio");</span></span><br><span class="line"><span class="xml">        e.setAttribute("class", l);</span></span><br><span class="line"><span class="xml">        e.src = i;</span></span><br><span class="line"><span class="xml">        e.loop = false;</span></span><br><span class="line"><span class="xml">        e.addEventListener("canplay", function() &#123;</span></span><br><span class="line"><span class="xml">            setTimeout(function() &#123;</span></span><br><span class="line"><span class="xml">                x(k)</span></span><br><span class="line"><span class="xml">            &#125;, 500);</span></span><br><span class="line"><span class="xml">            setTimeout(function() &#123;</span></span><br><span class="line"><span class="xml">                N();</span></span><br><span class="line"><span class="xml">                p();</span></span><br><span class="line"><span class="xml">                for (var e = 0; e <span class="tag">&lt; <span class="attr">O.length</span>; <span class="attr">e</span>++) &#123;</span></span></span><br><span class="line"><span class="xml">                    T(O[e])</span></span><br><span class="line"><span class="xml">                &#125;</span></span><br><span class="line"><span class="xml">            &#125;, 15500)</span></span><br><span class="line"><span class="xml">        &#125;, true);</span></span><br><span class="line"><span class="xml">        e.addEventListener("ended", function() &#123;</span></span><br><span class="line"><span class="xml">            N();</span></span><br><span class="line"><span class="xml">            h()</span></span><br><span class="line"><span class="xml">        &#125;, true);</span></span><br><span class="line">        e.innerHTML = " &lt;p&gt;If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.&lt;/p&gt; &lt;p&gt;";</span><br><span class="line">        document.body.appendChild(e);</span><br><span class="line">        e.play()</span><br><span class="line">    &#125;</span><br><span class="line">    function x(e) &#123;</span><br><span class="line">        e.className += " " + s + " " + o</span><br><span class="line">    &#125;</span><br><span class="line">    function T(e) &#123;</span><br><span class="line">        e.className += " " + s + " " + u[Math.floor(Math.random() * u.length)]</span><br><span class="line">    &#125;</span><br><span class="line">    function N() &#123;</span><br><span class="line">        var e = document.getElementsByClassName(s);</span><br><span class="line">        var t = new RegExp("\\b" + s + "\\b");</span><br><span class="line">        for (var n = 0; n &lt; e.length; ) &#123;</span><br><span class="line">            e[n].className = e[n].className.replace(t, "")</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    var e = 30;</span><br><span class="line">    var t = 30;</span><br><span class="line">    var n = 350;</span><br><span class="line">    var r = 350;</span><br><span class="line">    var i = "//7xuupy.com1.z0.glb.clouddn.com/tongxingSibel%20-%20Im%20Sorry.mp3";</span><br><span class="line">    var s = "mw-harlem_shake_me";</span><br><span class="line">    var o = "im_first";</span><br><span class="line">    var u = ["im_drunk", "im_baked", "im_trippin", "im_blown"];</span><br><span class="line">    var a = "mw-strobe_light";</span><br><span class="line">    var f = "//s3.amazonaws.com/moovweb-marketing/playground/harlem-shake-style.css";</span><br><span class="line">    var l = "mw_added_css";</span><br><span class="line">    var b = g();</span><br><span class="line">    var w = y();</span><br><span class="line">    var C = document.getElementsByTagName("*");</span><br><span class="line">    var k = null;</span><br><span class="line">    for (var L = 0; L &lt; C.length; L++) &#123;</span><br><span class="line">        var A = C[L];</span><br><span class="line">        if (v(A)) &#123;</span><br><span class="line">            if (E(A)) &#123;</span><br><span class="line">                k = A;</span><br><span class="line">                break</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    if (A === null) &#123;</span><br><span class="line">        console.warn("Could not find a node of the right size. Please try a different page.");</span><br><span class="line">        return</span><br><span class="line">    &#125;</span><br><span class="line">    c();</span><br><span class="line">    S();</span><br><span class="line">    var O = [];</span><br><span class="line">    for (var L = 0; L &lt; C.length; L++) &#123;</span><br><span class="line">        var A = C[L];</span><br><span class="line">        if (v(A)) &#123;</span><br><span class="line">            O.push(A)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"><span class="xml">    &#125;)()    '&gt;High一下<span class="tag">&lt;/<span class="name">a</span>&gt;</span> <span class="tag">&lt;/<span class="name">li</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<h4 id="4-添加最近访客"><a href="#4-添加最近访客" class="headerlink" title="4. 添加最近访客"></a><a href="#4-添加最近访客" title="4\. 添加最近访客"></a>4. 添加最近访客</h4><p>在需要添加最近访客的网页对应的 markdown 文件中添加如下代码：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">最近访客</span><br><span class="line">&lt;div <span class="class"><span class="keyword">class</span></span>=<span class="string">"ds-recent-visitors"</span> data-num-items=<span class="string">"39"</span> data-avatar-size=<span class="string">"40"</span> id=<span class="string">"ds-recent-visitors"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span></span><br></pre></td></tr></table></figure></p>
+<h4 id="5-鼠标点击小红心的设置"><a href="#5-鼠标点击小红心的设置" class="headerlink" title="5. 鼠标点击小红心的设置"></a><a href="#5-鼠标点击小红心的设置" title="5\. 鼠标点击小红心的设置"></a>5. 鼠标点击小红心的设置</h4><ol>
+<li>将 <a href="https://github.com/Neveryu/Neveryu.github.io/blob/master/js/src/love.js" target="_blank" rel="noopener">love.js</a> 文件添加到 \themes\next\source\js\src 文件目录下。</li>
+<li>找到 <code>\themes\next\layout\_layout.swing</code> 文件， <strong>在文件的后面，<code>&lt;/body&gt;</code> 标签之前</strong> 添加以下代码：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line">&lt;!-- 页面点击小红心 --&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/love.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="6-背景的设置"><a href="#6-背景的设置" class="headerlink" title="6. 背景的设置"></a><a href="#6-背景的设置" title="6\. 背景的设置"></a>6. 背景的设置</h4><ol>
+<li>将 <a href="https://github.com/Neveryu/Neveryu.github.io/blob/master/js/src/particle.js" target="_blank" rel="noopener">particle.js</a> 文件添加到 \themes\next\source\js\src 文件目录下。</li>
+<li>找到 <code>\themes\next\layout\_layout.swing</code> 文件， <strong>在文件的后面，<code>&lt;/body&gt;</code>标签之前</strong> 添加以下代码：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">	</span><br><span class="line">&lt;!-- 背景动画 --&gt;</span><br><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"/js/src/particle.js"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span></span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h4 id="7-修改文章内链接文本样式"><a href="#7-修改文章内链接文本样式" class="headerlink" title="7.修改文章内链接文本样式"></a><a href="#7-修改文章内链接文本样式" title="7.修改文章内链接文本样式"></a>7.修改文章内链接文本样式</h4><p>将链接文本设置为蓝色，鼠标划过时文字颜色加深，并显示下划线。<br>找到文件 <code>themes\next\source\css\_custom\custom.styl</code> ，添加如下 css 样式：<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.post-body p a &#123;</span><br><span class="line">  color: #0593d3;</span><br><span class="line">  border-bottom: none;</span><br><span class="line">  &amp;:hover &#123;</span><br><span class="line">    color: #0477ab;</span><br><span class="line">    text-decoration: underline;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h4 id="8-多说评论不稳定，加载速度慢怎么办？"><a href="#8-多说评论不稳定，加载速度慢怎么办？" class="headerlink" title="8. 多说评论不稳定，加载速度慢怎么办？"></a><a href="#8-多说评论不稳定，加载速度慢怎么办？" title="8\. 多说评论不稳定，加载速度慢怎么办？"></a>8. 多说评论不稳定，加载速度慢怎么办？</h4><p>把多说评论依赖的 embed.js 放置底部，这里需要修改的文件是 duoshuo.swig。<br>将<br><code>(document.getElementsByTagName(&#39;head&#39;)[0]</code></p>
+<p>修改成下面的代码<br><code>(document.getElementById(&#39;footer&#39;)</code></p>
+<h4 id="9-给-Github-添加-README"><a href="#9-给-Github-添加-README" class="headerlink" title="9. 给 Github 添加 README"></a><a href="#9-给-Github-添加-README" title="9\. 给 Github 添加 README"></a>9. 给 Github 添加 README</h4><p>默认情况下，Github中每一个项目，我们希望有一份 README.md 的文件来作为项目的说明，但是我们在项目根目录下的 blog\source 目录下创建一份 README.md 文件，写好说明介绍，部署的时候，这个 README.md 会被 hexo 解析掉，而不会被解析到 Github 中去的。<br>正确的解决方法其实很简单：<br><strong>把 README.md 文件的后缀名改成 “MDOWN” 然后扔到<code>blog/source</code>文件夹下即可，这样 hexo 不会解析，Github 也会将其作为 MD 文件解析。</strong></p>
+<h4 id="10-给-Blog-添加-LICENSE"><a href="#10-给-Blog-添加-LICENSE" class="headerlink" title="10. 给 Blog 添加 LICENSE"></a><a href="#10-给-Blog-添加-LICENSE" title="10\. 给 Blog 添加 LICENSE"></a>10. 给 Blog 添加 LICENSE</h4><p>在 <span id="inline-purple">主题配置文件</span> 中的 160 行左右：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"># Creative Commons 4.0 International License.</span><br><span class="line"># http://creativecommons.org/</span><br><span class="line"># Available: by | by-nc | by-nc-nd | by-nc-sa | by-nd | by-sa | zero</span><br><span class="line">creative_commons: by-nc-sa</span><br><span class="line">#creative_commons:</span><br></pre></td></tr></table></figure></p>
+<p>将其中第 4 行的注释放开，然后选择你想使用的 LICENSE 即可，可选项参照第 3 行。</p>
+<h5 id="最后要说的是："><a href="#最后要说的是：" class="headerlink" title="最后要说的是："></a><em>最后要说的是：</em></h5><p>_<a href="https://github.com/Neveryu/Neveryu.github.io" target="_blank" rel="noopener">博客源码</a> ， 欢迎 star<br>_</p>
+<p></p>
+<div>
+
+<blockquote>
+<p>————-本文结束 感谢您的阅读————-</p>
+</blockquote>
+</div>
+      
+    </div>
+	
+	
+	<div>
+	
+	 
+		<ul class="post-copyright">
+		  <li class="post-copyright-author">
+			  <strong>本文作者：</strong>小飞机
+		  </li>
+		  <li class="post-copyright-link">
+			<strong>本文链接：</strong>
+			<a href="/posts/d3b00179/" title="Hexo-NexT搭建个人博客（二）">posts/d3b00179/</a>
+		  </li>
+		  <li class="post-copyright-license">
+			<strong>版权声明： </strong>
+			本博客所有文章除特别声明外，均采用 <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/cn/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0 CN</a> 许可协议。转载请注明出处！
+		  </li>
+		</ul>
+	  
+	</div>
+	
+	
+    
+    
+	
+
+	<!-- 文章结尾插入 本文结束 提示 -->
+	<div>
+	  
+		<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">------本文结束<i class="fa fa-paw"></i>感谢阅读------</div>
+    
+</div>
+	  
+	</div>
+	
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechatpay.jpg" alt="小飞机 WeChat Pay"/>
+        <p>微信支付(WeChat Pay)</p>
+      </div>
+    
+
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/software/" rel="tag"><i class="fa fa-tag"></i> software</a>
+          
+            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/posts/518ec168/" rel="next" title="Hexo Next下添加版权声明模块">
+                <i class="fa fa-chevron-left"></i> Hexo Next下添加版权声明模块
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/606b3457/" rel="prev" title="基于Hexo搭建个人博客——进阶篇(从入门到入土)">
+                基于Hexo搭建个人博客——进阶篇(从入门到入土) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+    
+	
+		
+         <div onclick="ShowGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+         <div id="gitment-container" style="display:none"></div>
+       
+	  
+	
+	  
+
+ 
+
+   
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/avatar.gif"
+               alt="小飞机" />
+          <p class="site-author-name" itemprop="name">小飞机</p>
+           
+              <p class="site-description motion-element" itemprop="description"></p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives/">
+                <span class="site-state-item-count">26</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-categories">
+              <a href="/categories/index.html">
+                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-name">分类</span>
+              </a>
+            </div>
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">10</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+            
+              <span class="links-of-author-item">
+                <a href="https://github.com/anson2416" target="_blank" title="GitHub">
+                  
+                    <i class="fa fa-fw fa-github"></i>
+                  
+                    
+                      GitHub
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="https://twitter.com/xialiluo" target="_blank" title="Twitter">
+                  
+                    <i class="fa fa-fw fa-twitter"></i>
+                  
+                    
+                      Twitter
+                    
+                </a>
+              </span>
+            
+              <span class="links-of-author-item">
+                <a href="mailto:citygo@gmail.com" target="_blank" title="E-Mail">
+                  
+                    <i class="fa fa-fw fa-envelope"></i>
+                  
+                    
+                      E-Mail
+                    
+                </a>
+              </span>
+            
+          
+        </div>
+
+        
+        
+          <div class="cc-license motion-element" itemprop="license">
+            <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank">
+              <img src="/images/cc-by-nc-sa.svg" alt="Creative Commons" />
+            </a>
+          </div>
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-设置侧栏的位置"><span class="nav-number">1.</span> <span class="nav-text">1.设置侧栏的位置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-关于添加居中模块"><span class="nav-number">2.</span> <span class="nav-text">2. 关于添加居中模块</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-添加High一下"><span class="nav-number">3.</span> <span class="nav-text">3. 添加High一下</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#4-添加最近访客"><span class="nav-number">4.</span> <span class="nav-text">4. 添加最近访客</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#5-鼠标点击小红心的设置"><span class="nav-number">5.</span> <span class="nav-text">5. 鼠标点击小红心的设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#6-背景的设置"><span class="nav-number">6.</span> <span class="nav-text">6. 背景的设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#7-修改文章内链接文本样式"><span class="nav-number">7.</span> <span class="nav-text">7.修改文章内链接文本样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#8-多说评论不稳定，加载速度慢怎么办？"><span class="nav-number">8.</span> <span class="nav-text">8. 多说评论不稳定，加载速度慢怎么办？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#9-给-Github-添加-README"><span class="nav-number">9.</span> <span class="nav-text">9. 给 Github 添加 README</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#10-给-Blog-添加-LICENSE"><span class="nav-number">10.</span> <span class="nav-text">10. 给 Blog 添加 LICENSE</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#最后要说的是："><span class="nav-number">10.1.</span> <span class="nav-text">最后要说的是：</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小飞机</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Gemini
+  </a>
+</div>
+
+<!-- 网站底部字数统计 -->
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共字</span>
+</div>
+
+
+
+
+        
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+    <span class="site-pv">
+      <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      
+    </span>
+  
+</div>
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.2"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.2"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.2"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.2"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+   
+   
+   
+   
+   <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+   <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+   
+       <script type="text/javascript">
+           function ShowGitment(){
+               document.getElementById("gitment-display-button").style.display = "none";
+               document.getElementById("gitment-container").style.display = "block";
+               var gitment = new Gitment({
+                   id: window.location.pathname, 
+                   owner: 'anson2416',
+                   repo: 'anson2416.github.io',
+                   oauth: {
+                       client_id: '6bfd187fa7a08e8b9a45',
+                       client_secret: '3171b5570694a4efd1a79c79e8da04e6f7ada5d5',
+                   }});
+               gitment.render('gitment-container');
+           }
+       </script>
+   
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+  <!-- 为代码块添加复制功能 -->
+ <script type="text/javascript" src="/lib/zclip/clipboard.min.js"></script>	
+<script type="text/javascript" src="/js/src/custom.js"></script>
+ 
+</body>
+</html>
